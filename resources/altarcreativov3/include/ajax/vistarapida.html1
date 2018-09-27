@@ -1,0 +1,51 @@
+                               <div class="single-product shop-quick-view-ajax clearfix">
+
+                    <div class="ajax-modal-title">
+                        <h2>TU LUZ</h2>
+                    </div>
+
+                    <div class="product modal-padding clearfix">
+
+                        <div class="col_half nobottommargin">
+                            <div class="product-image">
+                                <div class="fslider" data-pagi="false">
+                                    <div class="flexslider">
+                                        <div class="slider-wrap">
+                                            <div class="slide"><a href="img/productos/1.jpg" title="YOUR LIGHT"><img src="img/productos/1.jpg" alt="YOUR LIGHT"></a></div>
+                                            <div class="slide"><a href="img/productos/2.jpg" title="YOUR LIGHT"><img src="img/productos/2.jpg" alt="YOUR LIGHT"></a></div>
+                                            <div class="slide"><a href="img/productos/3.jpg" title="YOUR LIGHT"><img src="img/productos/3.jpg" alt="YOUR LIGHT"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_half nobottommargin col_last product-desc">
+                            <div class="product-price"><del>$39.99</del> <ins>$24.99</ins></div>
+                            
+                            
+                            <div class="clear"></div>
+                            <div class="line"></div>
+
+                            <!-- Product Single - Quantity & Cart Button
+                            ============================================= -->
+                            <form class="cart nobottommargin clearfix" method="post" enctype='multipart/form-data'>
+                     
+                               <a class="add-to-cart button button-3d" href="carrito.php">aè´–adir al carrito</a>
+                            </form><!-- Product Single - Quantity & Cart Button End -->
+
+                            <div class="clear"></div>
+                            <div class="line"></div>
+                            <p>Video con mucho aprendizaje, te transmitirè´° valiosa informaciè´—n para la vida cotidiana</p>
+                            
+                            <div class="panel panel-default product-meta nobottommargin">
+                                <div class="panel-body">
+                                    <span itemprop="productID" class="sku_wrapper">SKU: <span class="sku">8465415</span></span>
+                                    <span class="posted_in">Categorè´øa: <a href="http://localhost/offbeat/wp/product-category/shoes/" rel="tag">Invitaciones</a>.</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>

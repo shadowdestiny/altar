@@ -1,0 +1,15 @@
+# INICIO
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /altar2
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /abmnoti/index.php [L]
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    #ErrorDocument 404 /uploadCI/index.php
+    ErrorDocument 404 /abmnoti/index.php  
+</IfModule>
+# FIN
