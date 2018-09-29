@@ -88,7 +88,7 @@ define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 /*********************************************************
  Constante de la url principal del proyecto
 *********************************************************/
-defined('ROOT_URL')			    OR define('ROOT_URL', 'http://localhost:8090/altar/');
+defined('ROOT_URL')			    OR define('ROOT_URL', 'http://104.197.71.141/altar/');
 defined('ROOT_URL_BACK')			    OR define('ROOT_URL_BACK', 'http://35.232.34.5/altar/backoffice/');
 defined('SITE_NAME')              OR define('SITE_NAME', 'CreativeAltar');
 defined('TIME_SESSION')            OR define('TIME_SESSION', 20);
@@ -112,8 +112,8 @@ defined('API_PAYPAL_URL_CANCEL')    OR define('API_PAYPAL_URL_CANCEL', ROOT_URL 
 /*********************************************************
  * EMAIL CONFIGURE
  ***********************************************************/
-defined('USER_MAIL')                     OR define('USER_MAIL', 'altarcreativo@gmail.com');
-defined('PASS_MAIL')                     OR define('PASS_MAIL', 'CRTV2014');
+defined('USER_MAIL')                     OR define('USER_MAIL', 'futuresoftware17@gmail.com');
+defined('PASS_MAIL')                     OR define('PASS_MAIL', '***890Ayanami909rei***');
 
 /*********************************************************
 Constante de lenguajes
