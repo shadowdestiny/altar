@@ -7,10 +7,21 @@
                     ============================================= -->
         <div class="footer-widgets-wrap clearfix">
             <div class="col_full">
-                <div class="col-md-4 col-sm-4 col-xs-12 fleft">
+                <div class="col-md-3 col-sm-3">
                     <div class="widget widget_links clearfix">
-                        <h4 class="jello"><?= $this->lang->line('footer__label_information') ?></h4>
-                        <ul>
+                        <img src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo">
+                        <ul class="footer-content">
+                            <li>
+                                Plataforma digital de contenido audiovisual para cristianos
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget widget_links clearfix">
+                        <h4 class="jello footer"><?= $this->lang->line('footer__label_information') ?></h4>
+                        <ul class="footer-content">
                             <li><a href="<?= ROOT_URL; ?>altar/creativealtar"><?= $this->lang->line('footer_home') ?></a></li>
                             <li>
                                 <a href="<?= ROOT_URL; ?>altar/Ctr_aboutus"><?= $this->lang->line('footer_about') ?></a>
@@ -31,42 +42,44 @@
                     </div>
                     <br>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 fleft">
+                <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="widget widget_links clearfix">
-                        <h4 class="jello"><?= $this->lang->line('footer__label_category') ?></h4>
-                        <ul>
+                        <h4 class="jello footer"><?= $this->lang->line('footer__label_category') ?></h4>
+                        <ul class="footer-content">
                             <?= $categoryFooter ?>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 col_last center">
-                <div class="widget clearfix">
-                    <h4><?= $this->lang->line('footer__label_follow') ?></h4>
-                    <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix" style="text-align: center">
+                        <h4 class="jello footer"><?= $this->lang->line('footer__label_follow') ?></h4>
+                        <div class="row">
 
-                        <div class="redes">
+                            <div class="redes">
 
-                            <div class="col-md-2 clearfix bottommargin-sm">
-                                <a href="<?= URL_FACEBOOK; ?>" class="social-icon si-light nobottommargin rightmargin-sm">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
+                                <div class="col-md-3 clearfix bottommargin-sm">
+                                    <a href="<?= URL_FACEBOOK; ?>" class="social-icon si-light nobottommargin rightmargin-sm">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 clearfix bottommargin-sm">
+                                    <a href="<?= URL_TWITTER; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
+                                        <i class="icon-twitter"></i>
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 clearfix bottommargin-sm">
+                                    <a href="<?= URL_INSTAGRAM; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
+                                        <i class="icon-instagram"></i>
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-md-2 clearfix bottommargin-sm">
-                                <a href="<?= URL_TWITTER; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
-                                    <i class="icon-twitter"></i>
-                                    <i class="icon-twitter"></i>
-                                </a>
-                            </div>
-                            <div class="col-md-2 clearfix bottommargin-sm">
-                                <a href="<?= URL_INSTAGRAM; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
-                                    <i class="icon-instagram"></i>
-                                    <i class="icon-instagram"></i>
-                                </a>
+                            <div class="col-md-12 clearfix bottommargin-sm" style="text-align: center">
+                                <a href="<?= URL_PAYPAL; ?>"><img src="<?= URL_TEMPLATEALTAR ?>img/paypal.png"></a>
                             </div>
                         </div>
-                        <div><a href="<?= URL_PAYPAL; ?>"><img src="<?= URL_TEMPLATEALTAR ?>img/paypal.png"></a></div>
                     </div>
                 </div>
             </div>
@@ -144,9 +157,9 @@
         if($variablesSession != null || $variablesSession != '')
             //Se crear un for para recorrer la informacion del array y su posicion
             foreach ($variablesSession as $key => $value) {
-            //a la variable arraySesionPurchase se le van cargando los valores de la variable de session 
+            //a la variable arraySesionPurchase se le van cargando los valores de la variable de session
                 $arraySesionPurchase .= $value;
-            //Se valida que la variable $variablesSession cuente con informacion     
+            //Se valida que la variable $variablesSession cuente con informacion
                 if((sizeof($variablesSession) - 1) > $con ){
                     //se concatena a la variable de session una coma para ir formando el array
                     $arraySesionPurchase .= ',';
@@ -155,7 +168,7 @@
                 $con++;
             }
         //final de corchetes de arreglo RESULTADO=ARRAYSESIONPURCHASE [0,2,3]
-        $arraySesionPurchase .= ']';        
+        $arraySesionPurchase .= ']';
     ?>
 // Variable de javascript = variable de php que contiene el arreglo de la variable de session
     arraySesionPurchase = <?= $arraySesionPurchase ?>;
@@ -173,9 +186,9 @@
         parsetags: 'onload'
     };
 </script>
-<script src="https://apis.google.com/js/client:platform.js" async defer></script>
-<script
+<!--<script src="https://apis.google.com/js/client:platform.js" async defer></script>-->
+<!--<script
         type="text/javascript"
         async defer
         src="//assets.pinterest.com/js/pinit.js"
-></script>
+></script>-->

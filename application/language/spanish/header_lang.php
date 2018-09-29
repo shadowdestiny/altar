@@ -1,8 +1,8 @@
 <?php
 $lang['header__label_callus']		= "Llámanos:";
 $lang['header__label_email']		= "Email:";
-$lang['header__label_lanEs']		= "Español";
-$lang['header__label_lanEn']		= "Inglés";
+$lang['header__label_lanEs']		= "Esp";
+$lang['header__label_lanEn']		= "Ing";
 $lang['header__label_signin']		= "Ingresar";
 $lang['header__label_register']		= "Regístrar";
 

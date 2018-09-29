@@ -96,7 +96,7 @@
 
     <!-- Footer
             ============================================= -->
-    <footer id="footer" class="dark">
+    <footer id="footer" class="dark">4
         <div class="container">
 
             <!-- Footer Widgets

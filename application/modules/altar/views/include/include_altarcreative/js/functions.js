@@ -62,6 +62,17 @@ if( $().infinitescroll ) {
 									|| window[vendors[x]+'CancelRequestAnimationFrame'];
 	}
 
+	$(document).ready(function(){
+        // cambiando estilo para hacer responsive, esta linea provicional solventa el tema de responsi de forma provicional, mejorar esto
+        $(".easy-autocomplete").css("width","100%");
+	});
+
+    //$("#myModal").modal();
+
+	$("#modal_button").click(function(){
+
+	});
+
 	if (!window.requestAnimationFrame)
 		window.requestAnimationFrame = function(callback, element) {
 			var currTime = new Date().getTime();
@@ -1599,27 +1610,43 @@ var SEMICOLON = SEMICOLON || {};
 				if (!$(event.target).closest('#primary-menu.mobile-menu-off-canvas > div > ul').length) { $('#primary-menu.mobile-menu-off-canvas > div > ul').toggleClass('show', false); }
 			});
 
+			var search = function(e){
+                $body.toggleClass('top-search-open');
+                $topCart.toggleClass('top-cart-open', false);
+                $( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show", false);
+                $pagemenu.toggleClass('pagemenu-active', false);
+                if ($body.hasClass('top-search-open')){
+                    $topSearch.find('input').focus();
+                }
+                e.stopPropagation();
+                e.preventDefault();
+			};
+
+			$("#top-search-trigger-init").click(function(e){
+                search(e);
+			});
+
 			$("#top-search-trigger").click(function(e){
-				$body.toggleClass('top-search-open');
-				$topCart.toggleClass('top-cart-open', false);
-				$( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show", false);
-				$pagemenu.toggleClass('pagemenu-active', false);
-				if ($body.hasClass('top-search-open')){
-					$topSearch.find('input').focus();
-				}
-				e.stopPropagation();
-				e.preventDefault();
+                search(e);
 			});
 
 		},
 
 		topcart: function(){
 
+			var cart = function(e){
+                $pagemenu.toggleClass('pagemenu-active', false);
+                $topCart.toggleClass('top-cart-open');
+                e.stopPropagation();
+                e.preventDefault();
+			};
+
+            $("#top-cart-trigger-init").click(function(e){
+                cart(e);
+            });
+
 			$("#top-cart-trigger").click(function(e){
-				$pagemenu.toggleClass('pagemenu-active', false);
-				$topCart.toggleClass('top-cart-open');
-				e.stopPropagation();
-				e.preventDefault();
+                cart(e);
 			});
 
 		}

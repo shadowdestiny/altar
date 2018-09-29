@@ -7,8 +7,8 @@ $lang['placeholder2'] = "- Categoría -";
 
 $lang['button1'] = "Realizar búsqueda";
 
-$lang['title_category'] = "CATEGORÍAS";
-$lang['subtitle_category'] = "Disfruta del contenido que tenemos para ti";
+$lang['title_category'] = "--CATEGORÍAS";
+$lang['subtitle_category'] = "--Disfruta del contenido que tenemos para ti";
 
 $lang['title_content'] = "CONOCE NUESTRO";
 $lang['subtitle_content'] = "ÚLTIMO CONTENIDO";

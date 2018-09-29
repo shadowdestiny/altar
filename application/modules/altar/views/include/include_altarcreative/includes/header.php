@@ -119,16 +119,24 @@
 
     <!-- Top Bar
             ============================================= -->
-    <div id="top-bar" class="dark">
+
+    <div id="top-bar" class="dark" style="display:none">
         <div class="container clearfix">
             <div class="col_half nobottommargin">
 
+                <div id="logo"><a href="<?= ROOT_URL; ?>altar/creativealtar" class="standard-logo"
+                                  data-dark-logo="<?= URL_TEMPLATEALTAR ?>images/logo-web.png"><img
+                                src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo"></a> <a
+                            href="<?= ROOT_URL; ?>altar/creativealtar" class="retina-logo"
+                            data-dark-logo="<?= URL_TEMPLATEALTAR ?>images/logo-web@x2.png"><img
+                                src="<?= URL_TEMPLATEALTAR ?>images/logo-web@x2.png" alt="CreativeAltar"></a></div>
+
                 <!-- Top Links
                               ============================================= -->
-                <div class="top-links"><?= $this->lang->line('header__label_callus') ?> <a href="tel:12345678">1234
-                        5678</a> | <?= $this->lang->line('header__label_email') ?> <a
-                            href="mailto:info@creativealtar.com">info@creativealtar.com</a>
-                </div>
+                <!--<div class="top-links"><?/*= $this->lang->line('header__label_callus') */?> <a href="tel:12345678">1234
+                        5678</a> | <?/*= $this->lang->line('header__label_email') */?> <a
+                            href="mailto:info@creativealtar.com">info@creativealtar.com0</a>
+                </div>-->
                 <!-- .top-links end -->
 
             </div>
@@ -163,6 +171,7 @@
                         class="registros spaceright" style="color: <?= $color_en; ?>">
                     <?= $this->lang->line('header__label_lanEn') ?>
                 </a>
+
                 <?php if ($this->session->userdata('user_id')): ?>
 
                     <a href="<?= ROOT_URL; ?>altar/Ctr_account/"
@@ -213,7 +222,7 @@
                 <div id="top-cart" class="">
 
                     <a href="#" id="top-cart-trigger">
-                        <i class="icon-shopping-cart"></i>
+                        <i class="icon-shopping-cart" style="display: none;"></i>
                         <?php
                         $styleAllElements = "";
                         $countAllElements = 0;
@@ -263,8 +272,10 @@
                     </div>
                 </div>
                 <nav id="primary-menu" class="style-2">
-                    <div id="top-search"><a href="#" id="top-search-trigger"><i class="icon-search3"></i><i
-                                    class="icon-line-cross"></i></a>
+                    <div id="top-search">
+                        <a href="#" id="top-search-trigger" >
+                            <i class="icon-search3" style="display: none"></i>
+                            <i class="icon-line-cross"></i></a>
                         <form action="<?= ROOT_URL; ?>altar/Ctr_filtervideo/view" method="post">
                             <input type="text" id="ajax-post-title-header" name="videoTitle" value=""
                                    class="form-control"
@@ -293,6 +304,69 @@
                             </a>
                         </li>
 
+                        <li>
+                            <?php if ($this->session->userdata('user_id')): ?>
+
+                                <a href="<?= ROOT_URL; ?>altar/Ctr_account/"
+                               class="regirtros">
+                                    <div class="login-b1">
+                                        <?= $this->session->userdata('nickname'); ?>
+                                    </div>
+                                </a>
+
+                            <?php else: ?>
+                                <a href="<?= ROOT_URL; ?>altar/Ctr_account/login"
+                               class="regirtros">
+                                    <div class="login-b1">
+                                        <?= $this->lang->line('header__label_signin') ?>
+                                    </div>
+                                </a>
+
+                            <?php endif; ?>
+                        </li>
+
+                        <li>
+
+                        <?php if ($this->session->userdata('user_id')): ?>
+
+                            <!--<a href="<?/*= ROOT_URL; */?>altar/Ctr_account/"
+                               class="regirtros"><?/*= $this->session->userdata('nickname'); */?></a> /-->
+                            <a href="<?= ROOT_URL; ?>altar/Ctr_account/closeSession" class="regirtros">Logout</a>
+
+                        <?php else: ?>
+                            <!--<a href="<?/*= ROOT_URL; */?>altar/Ctr_account/login"
+                               class="regirtros"><?/*= $this->lang->line('header__label_signin') */?></a> /-->
+                            <a href="<?= ROOT_URL; ?>altar/Ctr_register/"
+                               class="registros"><?= $this->lang->line('header__label_register') ?> </a>
+
+                        <?php endif; ?>
+
+                        </li>
+                        <li>
+                            <a href="#" id="top-search-trigger-init">
+                                <i class="icon-search3"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="top-cart-trigger-init">
+                                <i class="icon-shopping-cart"></i>
+                                <span id="shoeNumberAllElementsAdd" style="display: none;">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= ROOT_URL; ?>altar/Ctr_changelanguage?method=<?= $current_url; ?>&lang=<?= LANG_ES ?>"
+                               class="registros" style="color: <?= $color_es; ?>">
+                                <?= $this->lang->line('header__label_lanEs') ?> ▼
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="<?= ROOT_URL; ?>altar/Ctr_changelanguage?method=<?= $current_url; ?>&lang=<?= LANG_EN ?>"
+                                       class="registros spaceright" style="color: <?= $color_en; ?>">
+                                        <?= $this->lang->line('header__label_lanEn') ?>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 

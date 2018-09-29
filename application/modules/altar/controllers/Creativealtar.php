@@ -60,7 +60,7 @@ class creativealtar extends CI_Controller
         $result_category = $this->Mdl_creativealtar->front_category_image($lang);
         $data['category_seccion2'] = $this->form_category($result_category);
 
-        list($new, $popular) = $this->list_videos_new_popular();
+        list($new, $popular, $params) = $this->list_videos_new_popular();
 
         $result_download_free = $this->Mdl_creativealtar->front_video_free($lang);
         $data['video_free'] = $this->form_video_free($result_download_free);
@@ -76,6 +76,7 @@ class creativealtar extends CI_Controller
         $data['section1'] = $this->section1();
         $data['section2'] = $this->section2($data['category_seccion2']);
         $data['section3'] = $this->section3($new, $popular);
+        $data['params'] = $params;
         $data['section4'] = $this->section4($data['contrys'], $data['widget'], $data['script']);
 
         $this->load->view('include/include_altarcreative/includes/header', $data);
@@ -244,23 +245,27 @@ class creativealtar extends CI_Controller
 
                 $info = " <div class='content-wrap parallax' style='background-image: url(" . URL_IMAGES . "content/" . $section1[0]['image'] . ");'
                              data-stellar-background-ratio='0.3'>
-                            <div class='topmargin-sm center' style='padding-top: 35px;'>
-                                <h1 class='last-content nobottommargin'>" . $section1[0]['title'] . "</h1>
-                                <h1>" . $section1[0]['subtitle'] . "</h1>
+                            <div class='topmargin-sm center heading-block topmargin-sm center' style='padding-top: 35px;'>
+                                <h2 class='last-content nobottommargin'>" . $section1[0]['title'] . "<span style='font-weight: bold;color:black'> ".$section1[0]['subtitle']."</span></h2>
+                                <br />
                             </div>
                             <div class='container clearfix'>
-                                <ul id='portfolio-filter' class='portfolio-filter clearfix'>
-                                    <li class='activeFilter'><a href='#' data-filter='*'>" . $this->lang->line('video_carrucel_all') . "</a>
-                                    </li>
-                                    <li><a href='#' data-filter='.pf-nuevos'>" . $this->lang->line('video_carrucel_new') . "</a></li>
-                                    <li><a href='#' data-filter='.pf-populares'>" . $this->lang->line('video_carrucel_popular') . "</a></li>
-                                </ul>
-                                <div class='clear'></div>
-                                <div id='demo-gallery' class='col-3' data-lightbox='gallery'>
-                                    " . $videos_new . "
-                                    " . $videos_popular . "
+                                <div class='section-list'>
+                                    <ul id='portfolio-filter' class='portfolio-filter clearfix'>
+                                        <li class='activeFilter'><a href='#' data-filter='*'>" . $this->lang->line('video_carrucel_all') . "</a>
+                                        </li>
+                                        <li><a href='#' data-filter='.pf-nuevos'>" . $this->lang->line('video_carrucel_new') . "</a></li>
+                                        <li><a href='#' data-filter='.pf-populares'>" . $this->lang->line('video_carrucel_popular') . "</a></li>
+                                    </ul>
+                                    <div class='line-section'></div>
+                                    <div class='clear'></div>
+                                    <div id='demo-gallery' class='col-3' data-lightbox='gallery'>
+                                        " . $videos_new . "
+                                        " . $videos_popular . "
+                                    </div>
                                 </div>
-                            </div>
+                                <br/>
+                            </div>                            
                         </div>";
 
             }
@@ -399,17 +404,50 @@ class creativealtar extends CI_Controller
                                         </span>
                                     </h1>
                                 </div>
-                                <div class='col_half bottommargin-sm center'>
-                                    <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>
-                                        <img src='" . URL_IMAGES . "videos/thumbs/" . $result[0]['image_thumb'] . "' alt='Video Free'>
-                                     </a>
-                                </div>
-                                <div class='col_half col_last bottommargin-sm  cnetradoresponsivo col_last'>
-                                    <h1 class='nobottommargin topmargin'>" . $result[0]['text'] . "</h1>
-                                </div>
-                                 <a href='" . $download . "' class='button button-3d button-rounded button-black noleftmargin notopmargin'>" . $this->lang->line('video_download') . "</a>
+                                <div class='row right-section' style=''>
+                                    <div class='col-md-7 image-section-download'>
+                                        <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>
+                                            <img class='response-image-left' src='" . URL_IMAGES . "videos/thumbs/" . $result[0]['image_thumb'] . "' alt='Video Free'>                                            
+                                        </a>
+                                        <div class='video-component-section'>
+                                            <div>
+                                                 ►
+                                            </div>
+                                        </div>
+                                        <div class='opacity'>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class='col-md-5 right-section'>
+                                        <div class='col_last cnetradoresponsivo col_last heading-block' style='margin-bottom: 20px;'>
+                                            <h1 class='nobottommargin topmargin'>" . $result[0]['text'] . "</h1>
+                                        </div>
+                                        <div class='font-title-1'>
+                                            Altares y construcciones
+                                        </div>
+                                        <br />
+                                        <div class='font-title-2'>
+                                            Arquitectura investigacion 
+                                        </div>
+                                        <br />
+                                        
+                                        <button id='modal_button' class='default-button' data-toggle=\"modal\" data-target=\"#videoinfo\">
+                                            ".$this->lang->line('video_download')."
+                                        </button>
+                                         
+                                        <div style='text-align: right'>
+                                            <a hfer='#'>Ver más videos gratuitos</a>                                     
+                                        </a>
+                                    </div>
+                                </div>                                                                                                 
                             </div>
-                        </div>";
+                        </div>      
+                                                                                                                  
+                                                                                                                  
+                                                                                                                  
+                                                                                                                                          
+                                                                                                                  
+                        ";
 
         }
 
@@ -431,7 +469,7 @@ class creativealtar extends CI_Controller
         $new = $this->form_list_videos($result_new, 'nuevos');
         $popular = $this->form_list_videos($result_popular, 'populares');
 
-        return [$new, $popular];
+        return [$new["videos"], $popular["videos"], $new["params"]];
     }
 
     /**
@@ -479,16 +517,26 @@ class creativealtar extends CI_Controller
                                     </div>
                                 </div>
                                 <div class='product-desc center'>
-                                    <div class='product-title'><h3><a href='" . ROOT_URL . "altar/Ctr_product/view/$value[id]'>" . $value['text'] . "</a></h3></div>
-                                    <div class='product-price'><span class='signopesos'>$</span>" . $value['price'] . "</div>
+                                    <div class='product-title'>
+                                        <h3>
+                                            <a href='" . ROOT_URL . "altar/Ctr_product/view/$value[id]'>" . $value['text'] . " $</span>" . $value['price'] . "</a>                                            
+                                        </h3>
+                                    </div>                                    
                         
                                 </div>
                             </div>
-                        </div>";
+                        </div>
+                        
+                        ";
             }
 
 
         }
+
+        $videos = array(
+          "videos" => $videos,
+          "params" =>  $value
+        );
 
         return $videos;
 

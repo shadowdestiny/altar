@@ -115,7 +115,13 @@ class Ctr_filtervideo extends CI_Controller
 
             $videos = $this->formFilerterVideo($result, $paginate);
         } else {
-            $videos = "<center><h1>" . $this->lang->line('video_no_record') . "</h1></center>";
+            $videos = "
+                <center>
+                    <img src='" . URL_TEMPLATEALTAR . "img/productos/lulp.jpg' />
+                    <div>
+                        " . $this->lang->line('video_no_record') . "
+                    </div>                    
+                </center>";
         }
 
         $indexData['videos'] = $videos;
@@ -372,14 +378,20 @@ class Ctr_filtervideo extends CI_Controller
                     <div class='product-image'>
                         <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>
                             <img src='" . URL_IMAGES . "videos/thumbs/" . $value['image_thumb'] . "' alt='Checked Short Dress'>
+                            <br>
+                            <div style='text-align: center'>
+                                <button class='default-button'>".$this->lang->line('video_download')."</button>                      
+                            </div>                            
                         </a>
+                        <!--
                         <div class='product-overlay'>
                           <a class='button button-3d' href='" . $download . "' style='width:100%; margin-left:0px;'>
                           <i class='icon-line-download'></i>" . $this->lang->line('video_download') . "</a>
                         </div>
+                        -->
                     </div>
                     <div class='product-desc center'>
-                        <div class='product-title'><h3><a href='#'>$value[text]</a></h3></div>
+                        <div class='product-title' style='text-align: center'><h3><a href='#'>$value[text]</a></h3></div>
                         <div class='product-price'><ins>" . $this->lang->line('video_is_free') . "</ins></div>                        
                     </div>
                 </div>
@@ -464,11 +476,13 @@ class Ctr_filtervideo extends CI_Controller
                 $result .= "<article class='portfolio-item pf-media pf-icons'>
                                 <div class='portfolio-image'>
                                     <a href='" . ROOT_URL . "altar/Ctr_filtervideo/view/" . $value['id_category'] . "'>
-                                        <img src='" . URL_IMAGES . "videos/thumbs/" . $value['image_thumb'] . "' alt='Open Imagination'>
+                                        <img style='width:100%' src='" . URL_IMAGES . "videos/thumbs/" . $value['image_thumb'] . "' alt='Open Imagination'>
                                     </a>
                                     <div class='portfolio-overlay'>
-                                        <a href='" . ROOT_URL . "altar/Ctr_filtervideo/view/" . $value['id_category'] . "' class='right-icon'><i class='icon-line-plus'></i></a>
+                                        <a href='" . ROOT_URL . "altar/Ctr_filtervideo/view/" . $value['id_category'] . "' class='right-icon'>
+                                        <!--<i class='icon-line-plus'></i>-->
                                         <h4>".$value['text']."</h4>
+                                        </a>                                        
                                     </div>
                                 </div>                            
                             </article>

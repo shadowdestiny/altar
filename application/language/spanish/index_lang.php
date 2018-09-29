@@ -1,6 +1,6 @@
 <?php
 $lang['title1'] = "Historias asombrosas en video ";
-$lang['title2'] = "<h4 class='notopmargin exclusive-content'><span class='light thin'>Encuentra contenido exclusivo de</span><strong> CREATIVE</strong> ALTAR</h4>";
+$lang['title2'] = "<h4 class='notopmargin exclusive-content'><span class='light thin'>----Encuentra contenido exclusivo de</span><strong> CREATIVE</strong> ALTAR</h4>";
 
 $lang['placeholder1'] = "Buscar material";
 $lang['placeholder2'] = "- Categoría -";
@@ -8,7 +8,7 @@ $lang['placeholder2'] = "- Categoría -";
 $lang['button1'] = "Realizar búsqueda";
 
 $lang['title_category'] = "CATEGORÍAS";
-$lang['subtitle_category'] = "Disfruta del contenido que tenemos para ti";
+$lang['subtitle_category'] = "***Disfruta del contenido que tenemos para ti";
 
 $lang['title_content'] = "CONOCE NUESTRO";
 $lang['subtitle_content'] = "ÚLTIMO CONTENIDO";
@@ -46,13 +46,15 @@ $lang['account_form_phone'] = "Telefono";
 $lang['account_form_pass'] = "Contraseña";
 $lang['account_form_button'] = "Editar Información";
 /*Filter*/
-$lang['filter_title'] = "RESULTADOS DE BÚSQUEDA";
+$lang['filter_title'] = "Resultados";
 $lang['filter_most_sold'] = "LOS 10 MÁS VENDIDOS";
 $lang['filter_article_free'] = "Artículo gratis del día";
+$lang['search_layer'] = "Buscar por etiqueta";
 /*Video*/
 $lang['video_quickview'] = "Vista Rápida";
 $lang['quick_view_shop_car'] = "Añadir al carrito";
-$lang['video_no_record'] = "No existen registros.";
+$lang['video_no_record'] = "No hemos encontrado registro de lo que estás búscando, intente nuevamente.";
+$lang['back_home'] = "Regresar a inicio";
 $lang['video_favorities'] = " Añadir a favoritos.";
 /*VIDEO NEW AND POPULAR*/
 $lang['video_carrucel_all'] = "Todos";

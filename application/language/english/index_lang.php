@@ -50,7 +50,9 @@ $lang['filter_article_free'] = "Free article of the day";
 /*Video*/
 $lang['video_quickview'] = "Quick View";
 $lang['quick_view_shop_car'] = "Add to cart";
-$lang['video_no_record'] = "There are no videos.";
+$lang['video_no_record'] = "We have not found any record of what you are looking for, try again.";
+$lang['back_home'] = "back home";
+$lang['search_layer'] = "Search by layer";
 $lang['video_favorities'] = " Add to Favorites.";
 /*VIDEO NEW AND POPULAR*/
 $lang['video_carrucel_all'] = "All";

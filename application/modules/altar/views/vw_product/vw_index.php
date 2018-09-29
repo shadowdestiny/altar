@@ -31,6 +31,62 @@
                                 <div class="fslider" data-pagi="false" data-arrows="false" data-thumbs="true">
                                     <div class="flexslider">
                                         <?= $previewVideo ?>
+                                        <!--<img src="<?/*= URL_TEMPLATEALTAR */?>/img/productos/demo1.jpg" style="width:100%;">-->
+                                        <br>
+                                        <table class="footer-video">
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="<?= URL_TEMPLATEALTAR ?>/img/productos/fav.jpg" style="width: 15px" >
+                                                            </td>
+                                                            <td>
+                                                                Favorito
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="<?= URL_TEMPLATEALTAR ?>/img/productos/dow.jpg" style="width: 15px">
+                                                            </td>
+                                                            <td>
+                                                                Descargar previsualizacion
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div>
+                                            <div class="block-section">
+                                                Arquitectura
+                                            </div>
+                                            <div class="block-section">
+                                                Iglesia
+                                            </div>
+                                            <div class="block-section">
+                                                Altar
+                                            </div>
+                                            <div class="block-section">
+                                                Amarillo
+                                            </div>
+                                            <div class="block-section">
+                                                Pasaje
+                                            </div>
+                                            <div class="block-section">
+                                                Arquitectura
+                                            </div>
+                                            <div class="block-section">
+                                                Arquitectura
+                                            </div>
+                                            <div class="block-section">
+                                                Arquitectura
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div><!-- Product Single - Gallery End -->
@@ -133,6 +189,11 @@
 
                         </div>
 
+                        <!--Col video-->
+
+                        <?php
+
+                        /*
                         <div class="col_full nobottommargin">
 
                             <div class="tabs clearfix nobottommargin" id="tab-1">
@@ -215,26 +276,30 @@
 
 
                         </div>
+                */
+                        ?>
 
                     </div>
 
                 </div>
+
+
 
                 <div class="clear"></div>
                 <div class="line"></div>
 
-                <div class="col_full nobottommargin">
+               <!-- <div class="col_full nobottommargin">
 
-                    <h4><?= $this->lang->line('product_video_relatios'); ?></h4>
+                    <h4><?/*= $this->lang->line('product_video_relatios'); */?></h4>
 
                     <div id="oc-product" class="owl-carousel product-carousel carousel-widget" data-margin="30"
                          data-pagi="false" data-autoplay="5000" data-items-xxs="1" data-items-sm="2" data-items-lg="4">
 
-                        <?= $recommendations ?>
+                        <?/*= $recommendations */?>
 
                     </div>
 
-                </div>
+                </div>-->
 
             </div>
 
@@ -244,5 +309,112 @@
     </div>
 
 </section><!-- #content end -->
+
+<section>
+    <div class="content-display-video">
+        <br>
+        <br>
+        <div class="subtitle">
+            Videos relacionados (340)
+        </div>
+        <br>
+        <div class="content-images">
+            <div class="images">
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+                <div class="section-image">
+                    <div class="canvas-image">
+                        <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        Interior de iglesia
+                        <br/>
+                        $0.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</section>
+
+<section>
+    <style type="text/css">
+        .section-notice{
+            background: url('<?= URL_TEMPLATEALTAR ?>img/video-demo/negocios.jpg') no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+    <div class="section-notice">
+        <div class="content-section">
+            <div class="title-1">
+                ¡Recibe noticias acerca de nuestro material!
+            </div>
+            <div class="title-2">
+                Unete a la comunidad de Creative Altar y mantente al tanto de la fecha de lanzamiento
+            </div>
+            <div class="inputs">
+                <input type="text" class="subscribe-input"/>
+                <button class="subscribe-input">Suscribete</button>
+            </div>
+        </div>
+        <div class="opacity"></div>
+    </div>
+</section>
 
 <div class="loading" style="display: none;"></div>

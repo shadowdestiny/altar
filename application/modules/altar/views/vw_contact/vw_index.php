@@ -3,7 +3,7 @@
 <section id="page-title">
     <div class="container clearfix">
         <h1><?= $this->lang->line('contact_title') ?></h1>
-        <span><?= $this->lang->line('contact_subtitle') ?></span>
+        <!--<span><?/*= $this->lang->line('contact_subtitle') */?></span>-->
     </div>
 </section><!-- #page-title end -->
 <!-- Content
@@ -15,7 +15,7 @@
             <!-- Contact Form
             ============================================= -->
             <div class="col_half">
-                <div class="fancy-title title-dotted-border">
+                <div class="fancy-title">
                     <h3><?= $this->lang->line('contact_form_title') ?></h3>
                 </div>
                 <div class="contact-widget22222">
@@ -83,5 +83,31 @@
         </div>
     </div>
 </section><!-- #content end -->
+
+<section>
+    <style type="text/css">
+        .section-notice{
+            background: url('<?= URL_TEMPLATEALTAR ?>img/video-demo/negocios.jpg') no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+    <div class="section-notice">
+        <div class="content-section">
+            <div class="title-1">
+                ¡Recibe noticias acerca de nuestro material!
+            </div>
+            <div class="title-2">
+                Unete a la comunidad de Creative Altar y mantente al tanto de la fecha de lanzamiento
+            </div>
+            <div class="inputs">
+                <input type="text" class="subscribe-input"/>
+                <button class="subscribe-input">Suscribete</button>
+            </div>
+        </div>
+        <div class="opacity"></div>
+    </div>
+</section>
 
 <div class="loading" style="display: none;"></div>
