@@ -3,3 +3,4 @@ application/logs/*
 .idea/
 
 vimeo/example/source/
+.git
