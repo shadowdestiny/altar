@@ -323,6 +323,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -338,6 +341,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -353,6 +359,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -368,6 +377,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -383,6 +395,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -398,6 +413,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -413,6 +431,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -428,6 +449,9 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
+                        <div>
+                            <img src="<?= URL_TEMPLATEALTAR ?>/images/icons/favorite.png">
+                        </div>
                     </div>
                     <div class="text-photo">
                         <div class="title-left">
@@ -443,9 +467,10 @@
             </div>
         </div>
         <br>
+        <br>
         <div style="text-align: center">
             <button class="format-button">
-                Ver todo
+                <?= $this->lang->line('view_all'); ?></a>
             </button>
         </div>
         <br>

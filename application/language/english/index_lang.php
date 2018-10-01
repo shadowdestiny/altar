@@ -109,6 +109,8 @@ $lang['contact_form_message'] = "Message";
 $lang['contact_form_send_message'] = "Send Message";
 /*PRODUCT*/
 $lang['product_format_video'] = "Includes the following formats.";
+$lang['view_more'] = "View more";
+$lang['view_all'] = "View all";
 $lang['product_category'] = "Categories";
 $lang['product_views'] = "Views";
 $lang['product_share'] = "Share";

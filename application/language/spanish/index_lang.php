@@ -114,6 +114,8 @@ $lang['help_title'] = "Ayuda";
 $lang['help_subtitle'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum nunc ac maximus bibendum.";
 /*PRODUCT*/
 $lang['product_format_video'] = "Incluye los siguientes formatos";
+$lang['view_more'] = "Ver más";
+$lang['view_all'] = "Ver todos";
 $lang['product_category'] = "Categorías";
 $lang['product_views'] = "Vistas";
 $lang['product_share'] = "Compartir";

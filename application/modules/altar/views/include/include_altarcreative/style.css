@@ -14072,6 +14072,16 @@ ul.footer-content a{
 }
 .canvas-image{
 	color:white;
+	position:relative;
+}
+.canvas-image > div{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	cursor: pointer;
+}
+.canvas-image > div > img{
+	width: 10px !important;
 }
 .text-photo{
 	color:white;
