@@ -88,8 +88,8 @@
     <style type="text/css">
         .section-notice{
             background: url('<?= URL_TEMPLATEALTAR ?>img/video-demo/negocios.jpg') no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
+            /*background-attachment: fixed;
+            background-position: center center;*/
             background-size: cover;
         }
     </style>
