@@ -51,33 +51,32 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix" style="text-align: center">
+                    <div class="widget clearfix" style="text-align: left">
                         <h4 class="jello footer"><?= $this->lang->line('footer__label_follow') ?></h4>
                         <div class="row">
 
                             <div class="redes">
 
                                 <div class="col-md-3 clearfix bottommargin-sm">
-                                    <a href="<?= URL_FACEBOOK; ?>" class="social-icon si-light nobottommargin rightmargin-sm">
-                                        <i class="icon-facebook"></i>
-                                        <i class="icon-facebook"></i>
+                                    <a href="<?= URL_FACEBOOK; ?>" class="">
+                                        <img src="<?= URL_TEMPLATEALTAR ?>images/icons/network/facebook.png" alt="Canvas Logo">
                                     </a>
                                 </div>
                                 <div class="col-md-3 clearfix bottommargin-sm">
-                                    <a href="<?= URL_TWITTER; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
-                                        <i class="icon-twitter"></i>
-                                        <i class="icon-twitter"></i>
+                                    <a href="<?= URL_TWITTER; ?>" class="">
+                                        <img src="<?= URL_TEMPLATEALTAR ?>images/icons/network/twitter.png" alt="Canvas Logo">
                                     </a>
                                 </div>
                                 <div class="col-md-3 clearfix bottommargin-sm">
-                                    <a href="<?= URL_INSTAGRAM; ?>" class="social-icon si-light nobottommargin  rightmargin-sm">
-                                        <i class="icon-instagram"></i>
-                                        <i class="icon-instagram"></i>
+                                    <a href="<?= URL_INSTAGRAM; ?>" class="">
+                                        <img src="<?= URL_TEMPLATEALTAR ?>images/icons/network/instagram.png" alt="Canvas Logo">
                                     </a>
                                 </div>
-                            </div>
-                            <div class="col-md-12 clearfix bottommargin-sm" style="text-align: center">
-                                <a href="<?= URL_PAYPAL; ?>"><img src="<?= URL_TEMPLATEALTAR ?>img/paypal.png"></a>
+                                <div class="col-md-3 clearfix bottommargin-sm">
+                                    <a href="<?= URL_PAYPAL; ?>" class="">
+                                        <img src="<?= URL_TEMPLATEALTAR ?>images/icons/network/paypal_badge.png" alt="Canvas Logo">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
