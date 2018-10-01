@@ -13841,6 +13841,19 @@ button.black-button{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+button.format-button{
+	background: #051C2C;
+	border: 1px solid #FFCE01;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color: #FFCE01;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
 .font-title-1{
 	font-size: 18px;
 	font-weight: bold;
@@ -14048,7 +14061,7 @@ ul.footer-content a{
 .content-display-video .content-images .section-image{
 	width: 230px;
 	height: 182px;
-	display: inline-flex;
+	display: inline-block;
 	padding: 10px;
 }
 .content-display-video .content-images .section-image div img{
@@ -14059,4 +14072,21 @@ ul.footer-content a{
 }
 .canvas-image{
 	color:white;
+}
+.text-photo{
+	color:white;
+	text-align: left;
+	display: inline-flex;
+	width: 100%;
+}
+.content-display-video .content-images .section-image .title-left{
+	text-align: left;
+	width:50%;
+}
+.content-display-video .content-images .section-image .title-right{
+	text-align: right;
+	width: 50%;
+	font-size: 10px;
+	padding-top: 3px;
+	color: #b3b3b3;
 }

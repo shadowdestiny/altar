@@ -323,70 +323,131 @@
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
                 <div class="section-image">
                     <div class="canvas-image">
                         <img src="<?=URL_IMAGES?>/videos/thumbs/Image-34186_thumb.jpg" alt="">
-                        Interior de iglesia
-                        <br/>
-                        $0.00
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            Interior de iglesia
+                            <br/>
+                            $0.00
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <br>
+        <div style="text-align: center">
+            <button class="format-button">
+                Ver todo
+            </button>
+        </div>
         <br>
     </div>
 </section>
