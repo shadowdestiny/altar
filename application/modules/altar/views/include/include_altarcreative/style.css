@@ -13700,15 +13700,15 @@ text-align: center;}
 .section-video > .video-text{
 	position: absolute;
 	z-index: 3;
-	width: 100%;
-	max-width: 200px;
+	width: 35vw;
+	/* max-width: 200px; */
 	text-align: left;
 	top: 44%;
 	left: 10%;
 }
 .section-video > .video-text div{
 	color: #ffffff;
-	font-size:2vw;
+	font-size:3vw;
 	font-weight:bold;
 }
 .section-video > .video-controller > div{
@@ -13882,7 +13882,7 @@ img.response-image-left{
 	right:0;
 	background: #000000b3;
 }
-.image-section-download > .video-component-section {
+.image-section-download .video-component-section {
 	position: absolute;
 	z-index: 3;
 	width: 100%;
@@ -13891,7 +13891,10 @@ img.response-image-left{
 	margin-top: -3vw;
 	margin-left: -0.5vw;
 }
-.image-section-download > .video-component-section > div {
+.image-section-download-canvas{
+	position:relative;
+}
+.image-section-download  .video-component-section > div {
 	border: 1px solid white;
 	padding: 20px;
 	padding-top: 0.8vw;
@@ -13967,6 +13970,8 @@ button.subscribe-input{
 	height: 32px;
 	color: black;
 	font-weight:bold;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 .footer-widgets-wrap .clearfix ul{
 	list-style-type:none;

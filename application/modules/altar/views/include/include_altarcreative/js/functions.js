@@ -65,6 +65,11 @@ if( $().infinitescroll ) {
 	$(document).ready(function(){
         // cambiando estilo para hacer responsive, esta linea provicional solventa el tema de responsi de forma provicional, mejorar esto
         $(".easy-autocomplete").css("width","100%");
+
+        // al cargar toda la pagina se debe correr el siguiente script
+        window.onload = function WindowLoad(event) {
+            $("[data-filter]:eq(0)").trigger("click");
+        }
 	});
 
     //$("#myModal").modal();

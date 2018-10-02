@@ -404,7 +404,7 @@ class creativealtar extends CI_Controller
                                         </span>
                                     </h1>
                                 </div>
-                                <div class='row right-section' style=''>
+                                <div class='row right-section' style=''>                                    
                                     <div class='col-md-7 image-section-download'>
                                         <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>
                                             <img class='response-image-left' src='" . URL_IMAGES . "videos/thumbs/" . $result[0]['image_thumb'] . "' alt='Video Free'>                                            

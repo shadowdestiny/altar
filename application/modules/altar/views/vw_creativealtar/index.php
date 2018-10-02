@@ -202,16 +202,18 @@
                          <div class=''>
                              <div class='row right-section' style=''>
                                  <div class='col-md-7 image-section-download'>
-                                     <a href='<?=ROOT_URL  ?>altar/Ctr_filtervideo/quick_view/<?=$params["id"]?>" class='item-quick-view' data-lightbox='ajax'>
-                                     <img class='response-image-left' style="margin-left:0 " src='<?=URL_IMAGES  ?>videos/thumbs/<?=$params["image_thumb"]?>' alt='Video Free'>
-                                     </a>
-                                     <div class='video-component-section'>
-                                         <div>
-                                             ►
+                                     <div class="image-section-download-canvas">
+                                         <a href='<?=ROOT_URL  ?>altar/Ctr_filtervideo/quick_view/<?=$params["id"]?>" class='item-quick-view' data-lightbox='ajax'>
+                                         <img class='response-image-left' style="margin-left:0 " src='<?=URL_IMAGES  ?>videos/thumbs/<?=$params["image_thumb"]?>' alt='Video Free'>
+                                         </a>
+                                         <div class='video-component-section'>
+                                             <div>
+                                                 ►
+                                             </div>
                                          </div>
-                                     </div>
-                                     <div class='opacity'>
+                                         <div class='opacity'>
 
+                                         </div>
                                      </div>
                                  </div>
                                  <div class='col-md-5 right-section modal-section'>
