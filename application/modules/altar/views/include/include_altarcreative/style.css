@@ -13703,13 +13703,14 @@ text-align: center;}
 	width: 35vw;
 	/* max-width: 200px; */
 	text-align: left;
-	top: 44%;
+	top: 40%;
 	left: 10%;
 }
 .section-video > .video-text div{
 	color: #ffffff;
-	font-size:3vw;
-	font-weight:bold;
+	font-size: 4vw;
+	font-weight: bold;
+	font-style: italic;
 }
 .section-video > .video-controller > div{
 	border: 1px solid white;

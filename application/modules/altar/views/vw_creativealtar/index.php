@@ -64,7 +64,7 @@
         </div>
     </div>
     <div class="video-text">
-        <div>LA IGLESIA ESTA CAMBIANDO</div>
+        <div>LA IGLESIA ESTÁ CAMBIANDO</div>
     </div>
     <div class="video-search">
         <div class="input-search">
