@@ -82,8 +82,8 @@
 
  <style type="text/css">
      .opacity-section{
-         background: url('<?= URL_TEMPLATEALTAR ?>img/video-demo/interior.jpg') no-repeat;
-         background-attachment: fixed;
+         background: url('<?= URL_TEMPLATEALTAR ?>img/video-demo/img_concept_normal@2x.jpg') no-repeat;
+         /*background-attachment: fixed;*/
          background-position: center center;
          background-size: cover;
      }

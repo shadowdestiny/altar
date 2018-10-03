@@ -87,7 +87,8 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Palanquin', sans-serif;
+	/*font-family: 'Palanquin', sans-serif;*/
+	font-family: 'Avenir Next', serif;
 }
 
 a {
@@ -5869,8 +5870,9 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 }
 
 .product-desc {
-	padding: 15px 0;
+	padding: 5px 0;
 	font-size: 14px;
+	font-weight: bold;
 }
 
 .product-title { margin-bottom: 7px; }
@@ -13786,7 +13788,7 @@ text-align: center;}
 	background-size: cover;
 }
 .opacity-section > .opacity{
-	background:#ffce01e8;
+	background:#ffce01b3;
 	position:absolute;
 	top:0;
 	bottom:0;
@@ -14105,4 +14107,27 @@ ul.footer-content a{
 	font-size: 10px;
 	padding-top: 3px;
 	color: #b3b3b3;
+}
+
+.product-title .imagen-section3{
+	display:inline-flex;
+	text-align: left;
+	width: 100%;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.product-title .imagen-section3 > div div{
+	display: block;
+}
+.product-title .imagen-section3 {
+	font-weight: bold;
+}
+.product-title .imagen-section3 .column1{
+	width:70%;
+}
+.product-title .imagen-section3 .column2{
+	text-align:right;
+	width:30%;
+	font-size: 12px;
 }

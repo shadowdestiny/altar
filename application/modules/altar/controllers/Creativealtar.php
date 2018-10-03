@@ -518,11 +518,20 @@ class creativealtar extends CI_Controller
                                 </div>
                                 <div class='product-desc center'>
                                     <div class='product-title'>
-                                        <h3>
-                                            <a href='" . ROOT_URL . "altar/Ctr_product/view/$value[id]'>" . $value['text'] . " $</span>" . $value['price'] . "</a>                                            
-                                        </h3>
-                                    </div>                                    
-                        
+                                        <div class='imagen-section3'>
+                                            <div class='column1'>
+                                                <div >
+                                                    <a href='" . ROOT_URL . "altar/Ctr_product/view/$value[id]'>" . $value['text'] . " </a>
+                                                </div>
+                                                <div class='price'>
+                                                    $ ". $value['price'] ."
+                                                </div>                                                                                                                                    
+                                            </div>
+                                            <div class='column2'>
+                                                Clásico
+                                            </div>   
+                                        </div>
+                                    </div>                                                            
                                 </div>
                             </div>
                         </div>
