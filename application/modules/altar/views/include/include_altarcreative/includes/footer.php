@@ -9,14 +9,14 @@
             <div class="col_full">
                 <div class="col-md-3 col-sm-3">
                     <div class="widget widget_links clearfix">
-                        <img src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo">
+                        <img style="margin-top: -2px;" src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo">
                         <ul class="footer-content">
                             <li>
                                 Plataforma digital de contenido audiovisual para cristianos
                             </li>
                         </ul>
                     </div>
-
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="widget widget_links clearfix">
@@ -40,6 +40,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="vertical-line"></div>
                     <br>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
@@ -49,6 +50,7 @@
                             <?= $categoryFooter ?>
                         </ul>
                     </div>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="widget clearfix" style="text-align: left">
@@ -80,6 +82,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

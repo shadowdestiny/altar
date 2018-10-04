@@ -69,7 +69,7 @@
     <div class="video-search">
         <div class="input-search">
             <div>
-                <input type="text" placeholder="Buscar un video">
+                <input type="text" placeholder="<?= $this->lang->line('search_one_video') ?>">
                 <button>
                     <a href="javascript:void(0)">
                         <i class="icon-search3"></i>
@@ -98,6 +98,7 @@
                 </div>
                 <div class="col-md-2">
                     <h1>Un nuevo concepto</h1>
+                    <div class="vertical-line2"></div>
                 </div>
                 <div class="col-md-6">
                     <div style="color: black;padding-top: 3px;">
@@ -278,7 +279,7 @@
                  Unete a la comunidad de Creative Altar y mantente al tanto de la fecha de lanzamiento
              </div>
              <div class="inputs">
-                 <input type="text" class="subscribe-input"/>
+                 <input type="text" class="subscribe-input" placeholder="<?=$this->lang->line('write_email')?>"/>
                  <button class="subscribe-input">Suscribete</button>
              </div>
          </div>
