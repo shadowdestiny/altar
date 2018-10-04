@@ -336,8 +336,8 @@
                         <?php else: ?>
                             <!--<a href="<?/*= ROOT_URL; */?>altar/Ctr_account/login"
                                class="regirtros"><?/*= $this->lang->line('header__label_signin') */?></a> /-->
-                            <a href="<?= ROOT_URL; ?>altar/Ctr_register/"
-                               class="registros"><?= $this->lang->line('header__label_register') ?> </a>
+                            <a style="color:#FFCE00" href="<?= ROOT_URL; ?>altar/Ctr_register/"
+                               class="registros"><?= $this->lang->line('header__label_register') ?></a>
 
                         <?php endif; ?>
 

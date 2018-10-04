@@ -1095,7 +1095,7 @@ body.stretched #header.full-header .container {
 	line-height: 22px;
 	padding: 39px 7px;
 	color: #071C2C;
-	font-weight: 700;
+	font-weight: unset;
 	font-size: 12px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -11209,14 +11209,16 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .heading-block:after {
 	content: '';
 	display: block;
-	margin-top: 30px;
+	margin-top: 14px;
 	width: 40px;
 	border-top: 2px solid #ffce01;
 }
 
 .center .heading-block:after,
 .heading-block.center:after,
-.heading-block.title-center:after { margin: 30px auto 0; }
+.heading-block.title-center:after {
+	margin: -5px auto 0;
+}
 
 .tright .heading-block,
 .heading-block.tright,
@@ -11978,7 +11980,7 @@ button.toast-close-button {
 .footer-widgets-wrap .col_five_sixth { margin-bottom: 0; }
 
 #copyrights {
-	padding: 40px 0;
+	padding: 10px 0;
 	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
@@ -13975,6 +13977,7 @@ button.subscribe-input{
 	font-weight:bold;
 	padding-left: 24px;
 	padding-right: 24px;
+	padding-top: 0px;
 }
 .footer-widgets-wrap .clearfix ul{
 	list-style-type:none;

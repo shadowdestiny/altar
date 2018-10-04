@@ -397,6 +397,7 @@ class creativealtar extends CI_Controller
 
             $video .= " <div class='content-wrap'>
                             <div class='container clearfix'>
+                                <!--
                                 <div class='heading-block topmargin-sm center'>
                                    <h1 style='color: #ffce00;'>" . $this->lang->line('title_download1') . "
                                         <span class='free-download' style='color: #ffce00;'>
@@ -404,6 +405,7 @@ class creativealtar extends CI_Controller
                                         </span>
                                     </h1>
                                 </div>
+                                -->
                                 <div class='row right-section' style=''>                                    
                                     <div class='col-md-7 image-section-download'>
                                         <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>

@@ -61,7 +61,7 @@ $lang['video_carrucel_popular'] = "Most Popular";
 /*Video FREE*/
 $lang['video_is_free_no_exist'] = "There are no free videos.";
 $lang['video_is_free'] = "Free";
-$lang['video_download'] = "Download";
+$lang['video_download'] = "Download now";
 /*Suscribete*/
 $lang['subscribe_title'] = "Subscribe to our newsletter";
 $lang['subscribe_subtitle'] = "Get exclusive promotions";

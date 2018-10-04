@@ -100,9 +100,10 @@
                     <h1>Un nuevo concepto</h1>
                 </div>
                 <div class="col-md-6">
-                    <div>
+                    <div style="color: black;padding-top: 3px;">
                         Creyendo que cada iglesia merece acceso a contenido profesional que conecte con sus audiencias y glorifique a Dios, decidieron hacer algo al tanto.
-                        <br>
+                        <br/>
+                        <br/>
                         Creative Altar es el mejor lugar en linea para contenido de videos Cristinaos
                     </div>
                 </div>
