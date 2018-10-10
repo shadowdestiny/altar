@@ -243,7 +243,7 @@ class creativealtar extends CI_Controller
 
             } elseif ($section1[0]['type_media'] == "image") {
 
-                $info = " <div class='content-wrap parallax' style='background-image: url(" . URL_IMAGES . "content/" . $section1[0]['image'] . ");'
+                $info = " <div class='content-wrap parallax' *style='background-image: url(" . URL_IMAGES . "content/" . $section1[0]['image'] . ");'
                              data-stellar-background-ratio='0.3'>
                             <div class='topmargin-sm center heading-block topmargin-sm center' style='padding-top: 35px;'>
                                 <h2 class='last-content nobottommargin'>" . $section1[0]['title'] . "<span style='font-weight: bold;color:black'> ".$section1[0]['subtitle']."</span></h2>

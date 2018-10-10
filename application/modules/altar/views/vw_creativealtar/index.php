@@ -56,7 +56,7 @@
 
 
 <div class="section-video">
-    <img src="<?= URL_TEMPLATEALTAR ?>img/video-demo/5b60e05774ef5.jpeg">
+    <img src="<?= URL_TEMPLATEALTAR ?>img/video-demo/banner_video.png">
     <div class="video-opacity"></div>
     <div class="video-controller">
         <div>

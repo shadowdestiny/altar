@@ -13689,10 +13689,12 @@ text-align: center;}
 
 .section-video{
 	width: 100%;
+	height: 528px;
 	position: relative;
 }
 .section-video img{
 	width: 100%;
+	height: 100%;
 }
 .section-video > .video-controller{
 	position:absolute;
@@ -13711,10 +13713,21 @@ text-align: center;}
 	left: 10%;
 }
 .section-video > .video-text div{
-	color: #ffffff;
+	/*color: #ffffff;
 	font-size: 4vw;
 	font-weight: bold;
+	font-style: italic;*/
+
+	/* Style for "LA IGLESIA" */
+	width: 605px;
+	height: 96px;
+	color: #ffffff;
+	font-family: "Avenir Next";
+	font-size: 70px;
+	font-weight: 800;
 	font-style: italic;
+	line-height: 84px;
+	text-transform: uppercase;
 }
 .section-video > .video-controller > div{
 	border: 1px solid white;
@@ -13775,11 +13788,11 @@ text-align: center;}
 	-moz-border-radius-bottomright: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-
-	width: 42px;
-	height: 35px;
-	border: 1px solid black;
-	background: #051C2C;
+	width: 60px;
+	height: 34px;
+	border: 1px solid #ffce01;
+	background: black;
+	padding-bottom: 2px;
 }
 .section-video > .video-search > div.input-search button .icon-search3{
 	color:#FFCE01;
