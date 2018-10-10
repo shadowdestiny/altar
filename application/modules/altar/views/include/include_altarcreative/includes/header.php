@@ -96,6 +96,8 @@
           type="text/css"/>
     <link rel="stylesheet" href="<?= URL_TEMPLATEALTAR ?>css/responsive.css<?= URL_TEMPLATEALTARVERSIONCSSJS ?>"
           type="text/css"/>
+    <link rel="stylesheet" href="<?= URL_TEMPLATEALTAR ?>fonts/stylesheet.css<?= URL_TEMPLATEALTARVERSIONCSSJS ?>"
+          type="text/css"/>
     <link rel="stylesheet"
           href="<?= URL_TEMPLATEALTAR ?>includes/js/easy-autocomplete.min.css<?= URL_TEMPLATEALTARVERSIONCSSJS ?>"
           type="text/css"/>

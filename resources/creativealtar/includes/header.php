@@ -29,48 +29,48 @@
 
 <!-- Document Wrapper
       ============================================= -->
-<div id="wrapper" class="clearfix"> 
-  
+<div id="wrapper" class="clearfix">
+
   <!-- Top Bar
           ============================================= -->
   <div id="top-bar" class="dark">
     <div class="container clearfix">
       <div class="col_half nobottommargin">
-        
+
         <!-- Top Links
                       ============================================= -->
         <div class="top-links">Llámanos: <a href="tel:12345678">1234 5678</a> | Email: <a href="mailto:info@creativealtar.com4">info@creativealtar.com</a>
         </div>
-        <!-- .top-links end --> 
-        
+        <!-- .top-links end -->
+
       </div>
-      
+
       <div class="col_half fright col_last nobottommargin"> <a href="#" class="registros">Español</a> - <a href="#" class="registros spaceright">Inglés</a><a href="ingresar.php" class="regirtros">Ingresar</a> / <a href="registrarse.php" class="registros">Regístrar </a>  <i class="icon-guest" style="    top: 2px;
     position: relative;"></i>
     <a href="carrito.php" id="carritoresp"><i class="icon-shopping-cart"></i></a>
 
      </div>
-     
+
     </div>
   </div>
-  
-  
-  <!-- #top-bar end --> 
-  
+
+
+  <!-- #top-bar end -->
+
   <!-- Header
           ============================================= -->
   <header id="header" class="dark">
     <div id="header-wrap">
       <div class="container clearfix">
         <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-        
+
         <!-- Logo
                       ============================================= -->
         <div id="logo"> <a href="index.php" class="standard-logo" data-dark-logo="images/logo-web.png"><img src="images/logo-web.png" alt="Canvas Logo"></a> <a href="index.php" class="retina-logo" data-dark-logo="images/logo-web@x2.png"><img src="images/logo-web@x2.png" alt="CreativeAltar"></a> </div>
-        <!-- #logo end --> 
-        
+        <!-- #logo end -->
+
         <!-- Primary Navigation
-                     
+
                       ============================================= -->
                       <div id="top-cart" class="">
 							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
@@ -110,8 +110,8 @@
               <input type="text" name="q" class="form-control" value="" placeholder="Ingresa tu búsqueda...">
             </form>
           </div>
-          
-          
+
+
           <ul>
             <li class="current"><a href="categoria.php">
               <div>Mini Movies</div>
@@ -148,7 +148,7 @@
             </li>
           </ul>
         </nav>
-        
+
       </div>
     </div>
   </header>

@@ -96,11 +96,12 @@
                 <div class="col-md-2">
 
                 </div>
-                <div class="col-md-2">
-                    <h1>Un nuevo concepto</h1>
+                <div class="col-md-2" style="margin-top: 12px;">
+                    <h1 style="font-size:33px;margin-top: -7px;">Un nuevo</h1>
+                    <h1 style="margin-top: -38px;">concepto</h1>
                     <div class="vertical-line2"></div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin-top: 12px;">
                     <div style="color: black;padding-top: 3px;">
                         Creyendo que cada iglesia merece acceso a contenido profesional que conecte con sus audiencias y glorifique a Dios, decidieron hacer algo al tanto.
                         <br/>
