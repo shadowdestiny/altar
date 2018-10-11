@@ -70,6 +70,32 @@ if( $().infinitescroll ) {
         window.onload = function WindowLoad(event) {
             $("[data-filter]:eq(0)").trigger("click");
         }
+
+        $("#demo-gallery > div").each(function(i,el){
+        	if (i + 1 > 4){
+        		$(this).css("display","none");
+			}
+		});
+
+        var visibled = false;
+
+        $("#view_more_images").click(function(){
+
+            $("#demo-gallery > div").each(function(i,el){
+                if (i + 1 > 4){
+                    $(this).css("display",visibled===false ? "block" : "none");
+                }
+            });
+            if(!visibled){
+            	$(this).text("Ver menos")
+			} else {
+                $(this).text("Ver más")
+			}
+
+            visibled = !visibled;
+
+            $("a[data-filter='*']").trigger("click");
+		})
 	});
 
     //$("#myModal").modal();

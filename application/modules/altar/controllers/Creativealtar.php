@@ -395,7 +395,7 @@ class creativealtar extends CI_Controller
                 $download = "";
             }
 
-            $video .= " <div class='content-wrap'>
+            $video .= " <div class='content-wrap video-modal-section'>
                             <div class='container clearfix'>
                                 <!--
                                 <div class='heading-block topmargin-sm center'>
@@ -407,7 +407,7 @@ class creativealtar extends CI_Controller
                                 </div>
                                 -->
                                 <div class='row right-section' style=''>                                    
-                                    <div class='col-md-7 image-section-download'>
+                                    <div class='col-md-6 image-section-download'>
                                         <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $result[0]['id'] . "' class='item-quick-view' data-lightbox='ajax'>
                                             <img class='response-image-left' src='" . URL_IMAGES . "videos/thumbs/" . $result[0]['image_thumb'] . "' alt='Video Free'>                                            
                                         </a>
@@ -420,16 +420,17 @@ class creativealtar extends CI_Controller
                                         
                                         </div>
                                     </div>
-                                    <div class='col-md-5 right-section'>
+                                    <div class='col-md-1' style='width:2%;'></div>
+                                    <div class='col-md-5 right-section' style=''>
                                         <div class='col_last cnetradoresponsivo col_last heading-block' style='margin-bottom: 20px;'>
                                             <h1 class='nobottommargin topmargin'>" . $result[0]['text'] . "</h1>
                                         </div>
                                         <div class='font-title-1'>
                                             Altares y construcciones
                                         </div>
-                                        <br />
+                                        
                                         <div class='font-title-2'>
-                                            Arquitectura investigacion 
+                                            Arquitectura investigación Arte 
                                         </div>
                                         <br />
                                         
@@ -437,9 +438,12 @@ class creativealtar extends CI_Controller
                                             ".$this->lang->line('video_download')."
                                         </button>
                                          
-                                        <div style='text-align: right'>
-                                            <a hfer='#'>Ver más videos gratuitos</a>                                     
+                                        <br />
+                                       
+                                        <div style='text-align: right;' class='arrow-right-text'>
+                                            <a hfer='#'>Ver más videos gratuitos</a> <span class='arrow-right'>>></span>                                     
                                         </a>
+                                        
                                     </div>
                                 </div>                                                                                                 
                             </div>

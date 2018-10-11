@@ -178,8 +178,9 @@
 
     <br />
 
-    <div class="section-content">
-        <button class="default-button">Ver más</button>
+    <div class="section-content" style="margin-top: 0px;
+    margin-bottom: 43px;">
+        <button class="default-button" id="view_more_images">Ver más</button>
     </div>
 
     <br />
@@ -241,17 +242,19 @@
                                              Duracion del Video: <b>4:12 min</b>
                                          </div>
                                      </div>
-
+                                     <br />
+                                     <br />
+                                     <button id='modal_button' class='black-button' data-toggle=\"modal\" data-target=\"#videoinfo\">
+                                         <?=$this->lang->line('video_download')?>
+                                     </button>
                                  </div>
                              </div>
                          </div>
 
                  </div>
-                 <div class="modal-footer">
-                     <button id='modal_button' class='black-button' data-toggle=\"modal\" data-target=\"#videoinfo\">
-                         <?=$this->lang->line('video_download')?>
-                     </button>
-                 </div>
+                <!-- <div class="modal-footer">
+
+                 </div>-->
              </div>
          </div>
      </div>
