@@ -225,7 +225,7 @@
 					</div><!-- .postcontent end -->
 
 					<!-- Sidebar
-					============================================= -->
+					============================================= LM 2-->
 					<div class="sidebar nobottommargin">
 						<div class="sidebar-widgets-wrap">
 

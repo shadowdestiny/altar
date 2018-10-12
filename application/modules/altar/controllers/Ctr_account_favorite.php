@@ -117,7 +117,7 @@ class Ctr_account_favorite extends CI_Controller
                             
                         </div>
                         <ul class='entry-meta'>
-                        <div class='favoritos buttonAddFavorite changeCursorHand' video-id='$value[id]' user-id='$user_id'>
+                        <div class='favoritos buttonAddFavorite changeCursorHand' video-id='$value[id]' user-id='$user_id'>                            
                             <div class='desactivado'>
                                 <i class='icon-heart3 right'></i>    
                             </div>

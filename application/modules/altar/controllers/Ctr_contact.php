@@ -50,6 +50,7 @@ class Ctr_contact extends CI_Controller
         $data['categoryHeader'] = $category['categoryHeader'];
         $data['categoryFooter'] = $category['categoryFooter'];
         $data['categoryFilter'] = $category['categoryFilter'];
+        /*lmarin publicidad */
         $data['publicidad'] = $this->ctr_advertising->banners();
 
         $this->load->view('include/include_altarcreative/includes/header', $data);

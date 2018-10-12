@@ -46,7 +46,7 @@ $lang['filter_article_free'] = "Free article of the day";
 $lang['video_quickview'] = "Quick View";
 $lang['quick_view_shop_car'] = "Add to cart";
 $lang['video_no_record'] = "There are no videos.";
-$lang['video_favorities'] = " Add to Favorites.";
+$lang['video_favorities'] = " Add to Favorites";
 /*VIDEO NEW AND POPULAR*/
 $lang['video_carrucel_all'] = "All";
 $lang['video_carrucel_new'] = "New";
@@ -85,7 +85,7 @@ $lang['recovery_message_modal_title_success'] = "Success.";
 $lang['recovery_message_modal_buton_save'] = "Save.";
 $lang['recovery_message_modal_buton_close'] = "Close.";
 /*Contact Section*/
-$lang['contact_title'] = "Contact.";
+$lang['contact_title'] = "Contact";
 $lang['contact_subtitle'] = "Write us your doubts and comments view contact.";
 $lang['contact_form_title'] = "Send us your comments.";
 $lang['contact_form_name'] = "Name";

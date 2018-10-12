@@ -30,7 +30,7 @@
             </div><!-- .postcontent end -->
 
             <!-- Sidebar
-            ============================================= -->
+            ============================================= LM3-->
             <div class="sidebar nobottommargin col_last clearfix">
                 <div class="sidebar-widgets-wrap">
 

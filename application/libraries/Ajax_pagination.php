@@ -108,9 +108,37 @@ class Ajax_pagination
         $num_pages = ceil($this->total_rows / $this->per_page);
 
         // Is there only one page? Hm... nothing more to do here then.
-        if ($num_pages == 1) {
+        /*if ($num_pages == 1) {
             $info = '<ul class="pagination margin-medium-top"><li class="prev page">Mostrando : ' . $this->total_rows;
             return $info;
+        }*/
+
+
+        if ($num_pages == 1) {
+
+            $pagination = '
+            <nav aria-label="Page navigation">
+              <ul class="pagination top-buttom">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true"> < </span>
+                  </a>
+                </li>
+                <li class="selected"><a href="#" >1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>            
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true"> >> </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            ';
+
+            //$info = '<ul class="pagination margin-medium-top"><li class="prev page">Mostrando : ' . $this->total_rows;
+
+            return $pagination;
         }
 
         // Determine the current page number.

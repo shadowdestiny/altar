@@ -225,7 +225,7 @@
 					</div><!-- .postcontent end -->
 
 					<!-- Sidebar
-					============================================= -->
+					============================================= LM7-->
 					<div class="sidebar nobottommargin">
 						<div class="sidebar-widgets-wrap">
 

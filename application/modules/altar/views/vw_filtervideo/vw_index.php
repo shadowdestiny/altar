@@ -30,17 +30,13 @@ padding-left:30px;margin-top: 4px" placeholder="<?= $this->lang->line('search_la
             <div class="postcontent nobottommargin col_last" id="postList">
 
                 <?= $videos ?>
-                <div class="section-content">
-                    <button class="default-button">
-                        <?= $this->lang->line('back_home') ?>
-                    </button>
-                </div>
+
             </div><!-- .postcontent end -->
 
 
             <!-- Sidebar
-            ============================================= -->
-            <div class="sidebar nobottommargin">
+            ============================================= LM12-->
+            <div class="sidebar nobottommargin altar-style">
                 <div class="sidebar-widgets-wrap">
 
                     <div class="widget widget_links clearfix">

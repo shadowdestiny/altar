@@ -190,7 +190,13 @@ class Ctr_filtervideo extends CI_Controller
 
         $data = "";
 
-        $data .= "<div id='shop' class='shop product-3 clearfix'>";
+        $data .= "<div id='shop' class='content-display-video filter'>";
+
+        $data .="<br><br>";
+
+        $data .="<div class=\"content-images\">";
+
+        $data .="<div class=\"images\">";
 
         foreach ($result as $key => $value) {
 
@@ -205,8 +211,29 @@ class Ctr_filtervideo extends CI_Controller
                 $title = substr($title, 0, 25) . '...';
             }
 
+            $data .= '<div class="section-image">
+                    <div class="canvas-image">
+                        <a href="'. ROOT_URL .'altar/Ctr_product/view/'.$value['id'].'" class="footer-link">
+                        <img src="'. URL_IMAGES . "videos/thumbs/" . $value['previewThumPath'] .'" alt="Producto">
+                        </a>
+                        <div>
+                            <img src="'.URL_TEMPLATEALTAR .'/images/icons/favorite.png'.'">
+                        </div>
+                    </div>
+                    <div class="text-photo">
+                        <div class="title-left">
+                            <a href="'. ROOT_URL .'altar/Ctr_product/view/'.$value['id'].'" class="footer-link">'.$title.'</a>
+                            <br/>
+                            $&nbsp;'.$value['price'].'
+                        </div>
+                        <div class="title-right">
+                            Clásico
+                        </div>
+                    </div>
+                </div>';
 
-            $data .= "
+
+            /*$data .= "
             <div class='product clearfix'>
                 <div class='product-image'>
                     <a href='" . ROOT_URL . "altar/Ctr_product/view/$value[id]'><img src='" . URL_IMAGES . "videos/thumbs/" . $value['previewThumPath'] . "' alt='Producto'></a>
@@ -224,11 +251,23 @@ class Ctr_filtervideo extends CI_Controller
 
                 </div>
             </div>
-            ";
+            ";*/
 
         }
 
-        $data .= "</div>" . $paginate;
+        $data .= "</div>";
+        $data .= "</div>";
+
+        $data .= "</div>";
+
+        $back = '<div class="section-content">
+                    <button class="default-button">
+                        '.$this->lang->line('back_home').'
+                    </button>
+                    '.$paginate.'
+                </div>';
+
+        $data.=$back;
 
         return $data;
 

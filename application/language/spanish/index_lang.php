@@ -7,7 +7,7 @@ $lang['placeholder2'] = "- Categoría -";
 
 $lang['button1'] = "Realizar búsqueda";
 
-$lang['title_category'] = "CATEGORÍAS";
+$lang['title_category'] = "Categorías";
 $lang['subtitle_category'] = "***Disfruta del contenido que tenemos para ti";
 
 $lang['title_content'] = "CONOCE NUESTRO";
@@ -47,7 +47,7 @@ $lang['account_form_pass'] = "Contraseña";
 $lang['account_form_button'] = "Editar Información";
 /*Filter*/
 $lang['filter_title'] = "Resultados";
-$lang['filter_most_sold'] = "LOS 10 MÁS VENDIDOS";
+$lang['filter_most_sold'] = "Los 10 más vendidos";
 $lang['filter_article_free'] = "Artículo gratis del día";
 $lang['search_layer'] = "Buscar por etiqueta";
 /*Video*/
@@ -55,7 +55,7 @@ $lang['video_quickview'] = "Vista Rápida";
 $lang['quick_view_shop_car'] = "Añadir al carrito";
 $lang['video_no_record'] = "No hemos encontrado registro de lo que estás búscando, intente nuevamente.";
 $lang['back_home'] = "Regresar a inicio";
-$lang['video_favorities'] = " Añadir a favoritos.";
+$lang['video_favorities'] = " Añadir a favoritos";
 /*VIDEO NEW AND POPULAR*/
 $lang['video_carrucel_all'] = "Todos";
 $lang['video_carrucel_new'] = "Nuevos";
@@ -102,9 +102,9 @@ $lang['recovery_message_modal_title_success'] = "Éxito.";
 $lang['recovery_message_modal_buton_save'] = "Guardar.";
 $lang['recovery_message_modal_buton_close'] = "Cerrar.";
 /*Contact Section*/
-$lang['contact_title'] = "Contacto.";
+$lang['contact_title'] = "Contacto";
 $lang['contact_subtitle'] = "Escríbenos tus dudas y comentarios vista contacto.";
-$lang['contact_form_title'] = "Envíanos tus comentarios.";
+$lang['contact_form_title'] = "Escribenos tus dudas y comentarios";
 $lang['contact_form_name'] = "Nombre";
 $lang['contact_form_email'] = "Email";
 $lang['contact_form_phone'] = "Teléfono";

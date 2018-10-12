@@ -28,7 +28,7 @@
 					<div class="col_half">
 
 						<div class="fancy-title title-dotted-border">
-							<h3>Envíanos tus comentarios</h3>
+							<h3>Escribenos tus dudas y comentarios</h3>
 						</div>
 
 						<div class="contact-widget">

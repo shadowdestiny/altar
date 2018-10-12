@@ -70,7 +70,7 @@
   <section id="content">
     <div class="content-wrap categories-creativealtar">
       <div class="container bottommargin center">
-        <h1>CATEGORÍAS</h1>
+        <h1>Categorías</h1>
         <h5 class="notopmargin light">--Disfruta del contenido que tenemos para ti</h5>
       </div>
       <div class="container clearfix">

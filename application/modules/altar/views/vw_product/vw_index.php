@@ -30,8 +30,8 @@
                             <div class="product-image">
                                 <div class="fslider" data-pagi="false" data-arrows="false" data-thumbs="true">
                                     <div class="flexslider">
-                                        <?= $previewVideo ?>
-                                        <!--<img src="<?/*= URL_TEMPLATEALTAR */?>/img/productos/demo1.jpg" style="width:100%;">-->
+                                        <?/*= $previewVideo */?>
+                                        <img src="<?= URL_TEMPLATEALTAR ?>/img/productos/demo1.jpg" style="width:100%;">
                                         <br>
                                         <table class="footer-video">
                                             <tr>
@@ -114,6 +114,7 @@
                                    video-url="<?= ROOT_URL; ?>altar/Ctr_product/view/<?= $video_id; ?>"
 
                                 >
+                                    <i class='icon-cart'></i>
                                     <?= $this->lang->line('quick_view_shop_car'); ?></a>
                             </div><!-- Product Single - Quantity & Cart Button End -->
 
@@ -149,9 +150,9 @@
                             <div class="line"></div>
 
                             <!-- Product Single - Share
-                            ============================================= -->
-                            <div class="si-share noborder clearfix">
-                                <span><?= $this->lang->line('product_share'); ?>:</span>
+                            ============================================= lm compartir -->
+                            <div class="si-share noborder clearfix altar-icon">
+                                <!--<span><?/*= $this->lang->line('product_share'); */?>:</span>-->
                                 <div>
                                     <a href="#" class="social-icon si-borderless si-facebook sharedInfoFaceAltar">
                                         <i class="icon-facebook"></i>

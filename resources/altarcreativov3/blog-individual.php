@@ -188,7 +188,7 @@
 					</div><!-- .postcontent end -->
 
 					<!-- Sidebar
-					============================================= -->
+					============================================= LM8-->
 					<div class="sidebar nobottommargin clearfix">
 						<div class="sidebar-widgets-wrap">
 

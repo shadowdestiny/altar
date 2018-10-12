@@ -83,7 +83,7 @@
   <section id="content">
     <div class="content-wrap categories-creativealtar">
       <div class="container bottommargin center">
-        <h1>CATEGORÍAS</h1>
+        <h1>Categorías</h1>
         <h5 class="notopmargin light">Disfruta de nuevo contenido, puedes descragarlos y verlos cuando tu quieras</h5>
       </div>
       <div class="container clearfix">

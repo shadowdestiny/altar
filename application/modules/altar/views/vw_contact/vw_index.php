@@ -2,7 +2,7 @@
 ============================================= -->
 <section id="page-title">
     <div class="container clearfix">
-        <h1><?= $this->lang->line('contact_title') ?></h1>
+        <h2 style="margin-bottom: 0"><?= $this->lang->line('contact_title') ?></h2>
         <!--<span><?/*= $this->lang->line('contact_subtitle') */?></span>-->
     </div>
 </section><!-- #page-title end -->
@@ -12,11 +12,11 @@
 
     <div class="content-wrap">
         <div class="container clearfix">
-            <!-- Contact Form
+            <!-- Contact Form LM
             ============================================= -->
             <div class="col_half">
                 <div class="fancy-title">
-                    <h3><?= $this->lang->line('contact_form_title') ?></h3>
+                    <h5><?= $this->lang->line('contact_form_title') ?></h5>
                 </div>
                 <div class="contact-widget22222">
                     <div class="contact-form-result"></div>
@@ -71,6 +71,7 @@
                 <div class="widget clearfix">
                     <div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-items="1"
                          data-margin="10" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false">
+                        <!--lmarin publicidad -->
                         <?= $publicidad; ?>
                     </div>
                 </div>

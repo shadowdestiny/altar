@@ -198,7 +198,7 @@
 					</div><!-- .postcontent end -->
 
 					<!-- Sidebar
-					============================================= -->
+					============================================= LM6-->
 					<div class="sidebar nobottommargin col_last clearfix">
 						<div class="sidebar-widgets-wrap">
 
