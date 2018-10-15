@@ -413,7 +413,8 @@ class creativealtar extends CI_Controller
                                         </a>
                                         <div class='video-component-section'>
                                             <div>
-                                                 ►
+                                                 <!--►-->
+                                                 <img src ='".URL_TEMPLATEALTAR."img/icn_play.png'>
                                             </div>
                                         </div>
                                         <div class='opacity'>
