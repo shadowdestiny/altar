@@ -14014,7 +14014,7 @@ button.subscribe-input{
 	font-weight:bold;
 	padding-left: 24px;
 	padding-right: 24px;
-	padding-top: 0px;
+	padding-top: -1px;
 }
 .footer-widgets-wrap .clearfix ul{
 	list-style-type:none;
@@ -14063,6 +14063,7 @@ ul.footer-content a{
 }
 .modal-content{
 	background-color: #f2f2f2;
+	color:black;
 }
 .modal-section{
 	color:black;

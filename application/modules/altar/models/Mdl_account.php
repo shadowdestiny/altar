@@ -95,7 +95,7 @@ class Mdl_account extends CI_Model
         $query = "CALL account_verify_activation(
                             '$activation'                                           
                     );";
-
+        //die($query);
         mysqli_next_result($this->db->conn_id);
         $result = $this->db->query($query);
         ///echo $this->db->last_query();

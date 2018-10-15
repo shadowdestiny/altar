@@ -94,6 +94,7 @@ class Ctr_functions extends CI_Controller
     public function generate_session($params = array())
     {
 
+
         if (!empty($params)) {
             $this->CI->session->set_userdata($params);
             //redirect($params['redirect'], 'refresh');

@@ -137,7 +137,8 @@ class CI_Session {
 			unset($_COOKIE[$this->_config['cookie_name']]);
 		}
 
-		session_start();
+		// lmarin, se comenta por problemas de la session de codeigniter
+		#session_start();
 
 		// Is session ID auto-regeneration configured? (ignoring ajax requests)
 		if ((empty($_SERVER['HTTP_X_REQUESTED_WITH']) OR strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest')
@@ -309,13 +310,14 @@ class CI_Session {
 
 		$this->_config = $params;
 
+		# lmarin: Se comenta estas porque es incopatible con la version de codeigniter y php 7.1 para arriba
 		// Security is king
-		ini_set('session.use_trans_sid', 0);
+		/*ini_set('session.use_trans_sid', 0);
 		ini_set('session.use_strict_mode', 1);
 		ini_set('session.use_cookies', 1);
 		ini_set('session.use_only_cookies', 1);
 		ini_set('session.hash_function', 1);
-		ini_set('session.hash_bits_per_character', 4);
+		ini_set('session.hash_bits_per_character', 4);*/
 	}
 
 	// ------------------------------------------------------------------------
@@ -651,6 +653,7 @@ class CI_Session {
 	 */
 	public function userdata($key = NULL)
 	{
+	    //print_r($_SESSION);die;
 		if (isset($key))
 		{
 			return isset($_SESSION[$key]) ? $_SESSION[$key] : NULL;
@@ -702,7 +705,32 @@ class CI_Session {
 		}
 
 		$_SESSION[$data] = $value;
+		//var_dump($_SESSION);die;
 	}
+
+    /**
+     * Set all userdata
+     *
+     * Legacy CI_Session compatibility method
+     *
+     * @param	mixed	$data	Session data key or an associative array
+     * @param	mixed	$value	Value to store
+     * @return	void
+     */
+    public function set_all_userdata($data, $value = NULL)
+    {
+        if (is_array($data))
+        {
+            foreach ($data as $key => &$value)
+            {
+                $_SESSION[$key] = $value;
+            }
+
+            return;
+        }
+
+        $_SESSION[$data] = $value;
+    }
 
 	// ------------------------------------------------------------------------
 

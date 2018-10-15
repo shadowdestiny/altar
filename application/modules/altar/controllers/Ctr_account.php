@@ -12,7 +12,6 @@ class Ctr_account extends CI_Controller
 
     function __construct()
     {
-
         parent::__construct();
         $this->load->model('Mdl_account');
         $this->load->model('Mdl_filtervideo');
@@ -123,6 +122,7 @@ class Ctr_account extends CI_Controller
         if (!empty($data_verify)) {
 
             $result = $this->Mdl_account->account_verify_login($data_verify);
+
             if ($result->result()[0]->flag_login) {
                 $data_session['user_id'] = $result->result()[0]->id;
                 $data_session['name'] = $result->result()[0]->name;
@@ -241,7 +241,7 @@ class Ctr_account extends CI_Controller
 
             if ($result->result()[0]->flag_exist) {
 
-                var_dump($result->result()[0]);
+                #var_dump($result->result()[0]);
                 
                 $data['user_id'] = $result->result()[0]->id;
                 $data['email'] = $result->result()[0]->email;
