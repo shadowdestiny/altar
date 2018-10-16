@@ -15,6 +15,7 @@ class Ctr_blog extends CI_Controller
         $this->load->model('Mdl_blog');
         $this->load->model('Mdl_filtervideo');
         $this->load->library('Ajax_pagination');
+        $this->load->library('Ctr_functions');
         $this->perPage = 10;
 
         $this->load->library('Putlanguage');
@@ -136,6 +137,7 @@ class Ctr_blog extends CI_Controller
 
     }
 
+
     /**
      * Funcion para dar formato a la BLOG
      * @param null $result
@@ -147,7 +149,7 @@ class Ctr_blog extends CI_Controller
 
         $blog = "";
 
-        $blog .= "<div class='post-grid grid-container grid-3 clearfix' data-layout='fitRows'>";
+        $blog .= "<div class='post-grid grid-container grid-4 clearfix' data-layout='fitRows'>";
 
         if (!is_null($result)) {
 
@@ -166,22 +168,24 @@ class Ctr_blog extends CI_Controller
                     $value['content'] = $value['content'];
                 }
 
-                $date_comment = date("j F Y", strtotime($value['created']));
+                $date_comment = $this->ctr_functions->get_format_date($value['created'],$this->session->userdata('Setlanguage'));
 
-                $blog .= " <div class='entry clearfix'>
+                $blog .= " <div class='entry width clearfix'>
                         <div class='entry-image'>
                             <a href='" . ROOT_URL . "altar/Ctr_blog/view/" . $value['id'] . "'>
                                 <img class='image_fade' src='" . URL_IMAGES . "blogs/thumbs/" . $value['image_thumb'] . "'
                                      alt='Standard Post with Image'></a>
                         </div>
-                        <div class='entry-title'>
-                            <h2><a href='" . ROOT_URL . "altar/Ctr_blog/view/" . $value['id'] . "'>" . $value['title'] . "</a></h2>
+                        <div class='entry-title left'>
+                            <h4><a href='" . ROOT_URL . "altar/Ctr_blog/view/" . $value['id'] . "'>" . $value['title'] . "</a></h4>
                         </div>
-                        <ul class='entry-meta clearfix'>
-                            <li><i class='icon-calendar3'></i> " . $date_comment . " </li>
+                        <ul class='entry-meta clearfix calendar'>
+                            <li>
+                            <!--<i class='icon-calendar3'></i>--> 
+                            " . $date_comment . " </li>
                         </ul>
-                        <div class='entry-content'>
-                            <p>" . $value['content'] . "</p>
+                        <div class='entry-content left'>
+                            <!--<p>" . $value['content'] . "</p>-->
                             <a href='" . ROOT_URL . "altar/Ctr_blog/view/" . $value['id'] . "' class='more-link'>" . $this->lang->line('blog_keep_reading') . "</a>
                         </div>
                     </div>";

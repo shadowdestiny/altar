@@ -53,6 +53,7 @@
 	.ei-slider { height: 450px; }
 
 	.postcontent { width: 690px; }
+	.postcontent.no-width { width: 853px; }
 	.postcontent.bothsidebar { width: 440px; }
 	.sidebar { width: 210px; }
 
@@ -158,6 +159,10 @@
 	-----------------------------------------------------------------*/
 
 	.post-grid .entry { width: 214px; }
+
+	.post-grid .entry.width {
+		width: 200px;
+	}
 
 	/* Blog - Grid - 3 Columns
 	-----------------------------------------------------------------*/

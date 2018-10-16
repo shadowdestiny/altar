@@ -127,7 +127,7 @@ $lang['product_video_modal_review_response_true'] = "El comentario se agrego con
 $lang['product_video_modal_review_response_false'] = "Error al intentar agregar tu comentario, intenta de nuevo.";
 /*BLOG*/
 
-$lang['blog_keep_reading'] = "Seguir leyendo.";
+$lang['blog_keep_reading'] = "Seguir leyendo";
 $lang['blog_category'] = "Categorías";
 $lang['blog_populars'] = "Populares";
 $lang['blog_new'] = "Recientes";

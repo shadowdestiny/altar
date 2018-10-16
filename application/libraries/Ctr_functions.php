@@ -87,6 +87,65 @@ class Ctr_functions extends CI_Controller
         return [$first_name, $second_name, $first_surname, $second_surname];
     }
 
+    public function get_format_date($date_db,$language)
+    {
+
+        $date = date("j *** Y", strtotime($date_db));
+        $month_number = date("m", strtotime($date_db));
+
+        $language = "es";
+        switch ($language){
+            case "es":
+                switch ($month_number){
+                    case "01":
+                        $month_string = "Enero";
+                        break;
+                    case "02":
+                        $month_string = "Febrero";
+                        break;
+                    case "03":
+                        $month_string = "Marzo";
+                        break;
+                    case "04":
+                        $month_string = "Abril";
+                        break;
+                    case "05":
+                        $month_string = "Mayo";
+                        break;
+                    case "06":
+                        $month_string = "Junio";
+                        break;
+                    case "07":
+                        $month_string = "Julio";
+                        break;
+                    case "08":
+                        $month_string = "Agosto";
+                        break;
+                    case "09":
+                        $month_string = "Septiembre";
+                        break;
+                    case "10":
+                        $month_string = "Octubre";
+                        break;
+                    case "11":
+                        $month_string = "Noviembre";
+                        break;
+                    case "12":
+                        $month_string = "Diciembre";
+                        break;
+                }
+
+                $date = str_replace("***",$month_string,$date);
+
+                break;
+            default :
+                $date = date("j F Y", strtotime($date_db));
+                break;
+        }
+
+        return $date;
+    }
+
     /**
      * Funcion para generar la sesion
      * @param array $params

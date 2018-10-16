@@ -116,10 +116,10 @@ h3,
 h4,
 h5,
 h6 {
-	color: #071c2c;
+	color: #000000;
 	font-weight: 600;
 	line-height: 1.5;
-	margin: 0 0 30px 0;
+	/*margin: 0 0 30px 0;*/
 	font-family: 'Avenir LT Std';
 }
 
@@ -567,10 +567,10 @@ body.stretched .container-fullwidth {
 	position: relative;
 	margin-right: 4%;
 	margin-bottom: 50px;
-	float: left;
+	/*float: left;*/
 }
 
-.col_full, {
+.col_full {
 	display: block;
 	position: relative;
 	margin-right: 4%;
@@ -3519,7 +3519,7 @@ body:not(.device-touch) .grid-container {
 	margin: 0 auto;
 	list-style: none;
 	border-radius: 4px;
-    
+
 }
 
 .portfolio-filter li {
@@ -4905,10 +4905,10 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	position: relative;
 	margin: 0 0 50px;
 	padding: 0 0 50px;
-	border-bottom: 2px solid #F5F5F5;
+	/*border-bottom: 2px solid #F5F5F5;*/
 }
 
-.entry-image { margin-bottom: 30px; }
+.entry-image { margin-bottom: 20px; }
 
 .entry-image,
 .entry-image > a,
@@ -4932,9 +4932,13 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	letter-spacing: 1px;
 }
 
-.entry-title h2 a { color: #333; }
+.entry-title h2 a { color: #000000; }
 
 .entry-title h2 a:hover { color: #1ABC9C; }
+.entry-title.left{
+	text-align: left;
+	font-size:17px;
+}
 
 .entry-meta {
 	margin: 10px -10px -15px 0;
@@ -4949,8 +4953,8 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	line-height: 14px;
 	margin: 0 10px 15px 0;
 	color: #999;
-	font-family: 'Crete Round', serif;
-	font-style: italic;
+	/*font-family: 'Crete Round', serif;
+	font-style: italic;*/
 }
 
 .entry-meta li:before {
@@ -5107,10 +5111,17 @@ body:not(.device-touch) .entry-link {
 .post-grid .entry {
 	float: left;
 	width: 264px;
-	margin-right: 28px;
+	margin-right: 10px;
 }
 
-.post-grid .entry-image img { border-radius: 0; }
+.post-grid .entry-image img {
+	width: 300px;
+	height: 155px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #B3B3B3;
+}
 
 .post-grid .entry-title h2 {
 	font-size: 17px;
@@ -5373,10 +5384,17 @@ body:not(.device-touch) .entry-link {
 
 .more-link {
 	display: inline-block;
-	border-bottom: 1px solid #1ABC9C;
-	padding: 0 2px;
-	font-family: 'Crete Round', serif;
-	font-style: italic;
+	/* border-bottom: 1px solid #1ABC9C; */
+	/* padding: 0 2px; */
+	/* font-family: 'Crete Round', serif; */
+	/* font-style: italic; */
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
 }
 
 .more-link:hover { border-bottom-color: #555; }
@@ -14336,4 +14354,42 @@ i[id='iconheartfavorite']{
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
+}
+#postList{
+	margin-left: auto;
+	margin-right: auto;
+}
+.entry-meta.calendar{
+	color:black;
+	margin-top: -8px;
+}
+.entry-meta.calendar li{
+	color: black;
+	font-style: normal;
+	font-weight: bold;
+	font-size:11px;
+}
+.entry-content.left{
+	text-align:left;
+}
+.post-grid .entry.width{
+	/*margin: 0 0 20px;*/
+	margin-bottom:10px;
+	padding: 0 0 20px;
+	border-bottom: 0px;
+}
+a.back-link{
+	font-weight:bold;
+}
+a.back-link span{
+	/*color:#ffce01;*/
+}
+.entry.blog-content{
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+}
+.entry-content.blog-content{
+	padding-left:60px;
+	padding-right:60px;
+	color: black;
 }
