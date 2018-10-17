@@ -464,24 +464,26 @@ class Ctr_account extends CI_Controller
                 $value['created'] = date("j F Y", strtotime($value['created']));
 
                 $order .= "  <div class='panel panel-default tabladepedido'>
+                                <!--
 							    <div class='panel-heading'>
-							    <div class='col-md-4'>" . $value['order_number'] . "</div>
-							    <div class='col-md-4 center'>" . $value['created'] . "</div>
-							    <div class='col-md-4 paraimprimirrecibo'>
-                                   <!-- <a href='#'><span>Imprimir recibo</span>
-                                        <i class='icon-line2-printer fright'></i>
-                                    </a>-->
-							    </div>							
-							 </div>
-							<table class='table'>
-								<thead>
+                                    <div class='col-md-4'>" . $value['order_number'] . "</div>
+                                    <div class='col-md-4 center'>" . $value['created'] . "</div>
+                                    <div class='col-md-4 paraimprimirrecibo'>
+                                        <a href='#'><span>Imprimir recibo</span>
+                                            <i class='icon-line2-printer fright'></i>
+                                        </a>
+                                    </div>							
+							    </div>
+							    -->
+							    <table class='table order'>
+								<!--<thead>
 									<tr>
 										<th></th>
 										<th>Producto</th>
 										<th>Precio</th>
 										<th>Descargar</th>
 									</tr>
-								</thead>
+								</thead>-->
 								<tbody>";
 
 
@@ -501,9 +503,9 @@ class Ctr_account extends CI_Controller
                     }
 
                     $order .= "<tr> 
-                                    <td>
+                                    <td style='width:200px'>
                                     <a href='" . ROOT_URL . "altar/Ctr_filtervideo/quick_view/" . $value2['id'] . "' class='item-quick-view' data-lightbox='ajax'>
-                                    <img width='64' height='64' src='" . URL_IMAGES . "videos/thumbs/" . $value2['image_thumb'] . "' alt='" . $value2['sku'] . "'></a>
+                                    <img width='200' height='135' src='" . URL_IMAGES . "videos/thumbs/" . $value2['image_thumb'] . "' alt='" . $value2['sku'] . "'></a>
                                     </td>
                                     <td><a href='" . ROOT_URL . "altar/Ctr_product/view/" . $value2['id'] . "'>" . $value2['sku'] . "</a></td>
                                     <td><span class='signopesos'>$</span>" . $value2['price'] . "</td>
@@ -511,15 +513,23 @@ class Ctr_account extends CI_Controller
                                 </tr>";
                 }
 
-                $order .= "<tr>
-                                    <td></td>
-                                    <td><b>TOTAL</b></td>
-                                    <td><span class='signopesos'>$</span>" . $value['total_to_paid'] . "</td>
-                                    <td></td>
-									</tr>
+                $order .= "
 								</tbody>
-							</table>
+							</table>							
 						</div>
+						<div>
+						    <table class='table order' style='width: 40%!important;'>
+							    <tbody>
+							        <tr>
+							            <td></td>
+                                        <td><b>TOTAL</b></td>
+                                        <td><span class='signopesos'>$</span>" . $value['total_to_paid'] . "</td>
+                                        <td></td>
+									</tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
           ";
             }
 

@@ -26,6 +26,9 @@ $lang['login_form_forget'] = "¿Olvidaste tu contraseña?";
 
 /*Section Account*/
 $lang['account_title'] = "My account";
+$lang['account_product'] = "Product";
+$lang['account_price'] = "Price";
+$lang['account_download'] = "Download";
 $lang['account_title2'] = "Personal information";
 $lang['account_subtitle'] = "Account data registered at CreativeAltar";
 $lang['account_list_history'] = "Orders history";

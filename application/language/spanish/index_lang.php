@@ -29,6 +29,9 @@ $lang['login_form_button'] = "INGRESAR";
 $lang['login_form_forget'] = "¿Olvidaste tu contraseña?";
 /* Section Account*/
 $lang['account_title'] = "Mi cuenta";
+$lang['account_product'] = "Producto";
+$lang['account_price'] = "Precio";
+$lang['account_download'] = "Descargar";
 $lang['account_title2'] = "Información personal";
 $lang['account_subtitle'] = "Datos de la cuenta registrada en CreativeAltar";
 $lang['account_list_history'] = "Historial de pedidos";
@@ -145,7 +148,7 @@ $lang['product_video_modal_review_response_true'] = "El comentario se agrego con
 $lang['product_video_modal_review_response_false'] = "Error al intentar agregar tu comentario, intenta de nuevo.";
 /*Historial de Pedidos*/
 $lang['order_history_empty'] = "Por el momento no hay pedidos.";
-$lang['account_order_history_title'] = "Mis pedidos";
+$lang['account_order_history_title'] = "Historial de pedidos";
 $lang['purchases_title'] = "Orden de Compra";
 /*ABOUT US*/
 $lang['about_graph_suscriptors'] = "SUSCRIPTORES";

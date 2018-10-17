@@ -14393,3 +14393,86 @@ a.back-link span{
 	padding-right:60px;
 	color: black;
 }
+.section-top-account{
+	text-align:center;
+}
+.section-top-account > div{
+	text-align:center;
+	width: 66%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.section-top-account h4{
+	font-size:16px;
+}
+.section-top-account.selected-account > div{
+	border-bottom:2px solid black;
+}
+.section-top-account.selected-account > div h4{
+	font-size:16px;
+}
+.container.top-account{
+	padding-left: 150px;
+	padding-right: 150px;
+}
+#page-title.account-title{
+	position: relative;
+	 padding: 0;
+	background-color: #F5F5F5;
+	 border-bottom: 0;
+}
+#page-title.account-title .content-wrap{
+	padding: 0;
+}
+.contenidodeinformaciongeneral{
+	color:black;
+}
+.content-user .col-md-3,.col-md-4,.col-md-2,.col-md-6,.col-md-12{
+	padding:0;
+}
+.content-user p{
+	color:black;
+}
+p.cancel-supcription{
+	color:#E50808;
+    font-weight: bold;
+	padding:0;
+	margin:0;
+}
+.note-cancel{
+	font-size: 12px;
+	color:black;
+}
+
+.panel-default > .panel-heading {
+	color: #333333;
+	background-color: unset;
+	border-color: unset;
+	border:0px;
+}
+.panel-default {
+	border-color: unset;
+	border:0px;
+}
+.table.order{
+	width: 75%!important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table.order > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	border:0px;
+	color:black;
+
+}
+.header-order{
+	width: 100%;
+	text-align: center;
+	height: 45px;
+	border-bottom: 1px solid #e8e6e6;
+}
+.header-order > div{
+	padding-left:100px;
+	padding-right:100px;
+	margin-left: auto;
+	margin-right:auto;
+}

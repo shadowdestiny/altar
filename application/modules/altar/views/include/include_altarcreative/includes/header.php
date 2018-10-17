@@ -312,7 +312,7 @@
                                 <a href="<?= ROOT_URL; ?>altar/Ctr_account/"
                                class="regirtros">
                                     <div class="login-b1">
-                                        <?= $this->session->userdata('nickname'); ?>
+                                        <?= substr($this->session->userdata('nickname'),0,12); ?>
                                     </div>
                                 </a>
 
