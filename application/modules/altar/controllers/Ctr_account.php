@@ -523,7 +523,7 @@ class Ctr_account extends CI_Controller
 							        <tr>
 							            <td></td>
                                         <td><b>TOTAL</b></td>
-                                        <td><span class='signopesos'>$</span>" . $value['total_to_paid'] . "</td>
+                                        <td><b><span class='signopesos'>$</span>" . $value['total_to_paid'] . "</b></td>
                                         <td></td>
 									</tr>
                                     </tr>
