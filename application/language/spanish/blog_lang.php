@@ -23,9 +23,9 @@ $lang['button_download2'] = "DESCARGAR";
 
 /*Login*/
 $lang['login_title'] = "Ingresa tu cuenta";
-$lang['login_form_email'] = "CORREO";
+$lang['login_form_email'] = "Correo";
 $lang['login_form_pass'] = "CONSTRASEÑA";
-$lang['login_form_button'] = "INGRESAR";
+$lang['login_form_button'] = "Ingresar";
 $lang['login_form_forget'] = "¿Olvidaste tu contraseña?";
 /* Section Account*/
 $lang['account_title'] = "Mi cuenta";

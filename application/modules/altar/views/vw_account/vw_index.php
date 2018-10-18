@@ -25,7 +25,11 @@
                 </div>
                 <div class="col-md-4 section-top-account">
                     <div>
-                        <h4><?= $this->lang->line('account_title') ?></h4>
+                        <h4>
+                            <a href="<?=URL_USUARIO_FAVORITE?>">
+                                <?= $this->lang->line('account_favorities_title') ?>
+                            </a>
+                        </h4>
                     </div>
                 </div>
             </div>

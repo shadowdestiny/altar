@@ -121,41 +121,50 @@
 
                     <div class="row center">
                         <a href="<?= ROOT_URL; ?>" class="standard-logo"
-                           data-dark-logo="<?= URL_TEMPLATEALTAR ?>images/logo-web-.png"><img
+                           data-dark-logo="<?= URL_TEMPLATEALTAR ?>images/logo-web-.png" style="width: 200px;"><img
                                     src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo"></a>
                     </div>
 
-                    <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;">
-                        <div class="panel-body" style="padding: 40px;">
+                    <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;background: #071C2C">
+                        <div class="panel-body panel-login" style="padding: 23px;">
                             <form id="login-form" name="login-form" class="nobottommargin"
                                   onsubmit="return validateLogin();">
                                 <h3><?= $this->lang->line('login_title') ?></h3>
 
                                 <div class="col_full">
                                     <label for="login-form-username"><?= $this->lang->line('login_form_email') ?>
-                                        :</label>
+                                        </label>
                                     <input type="text" id="email" name="email" value=""
                                            class="form-control not-dark"/>
                                 </div>
 
                                 <div class="col_full">
                                     <label for="login-form-password"><?= $this->lang->line('login_form_pass') ?>
-                                        :</label>
+                                        </label>
                                     <input type="password" id="password" name="password" value=""
                                            class="form-control not-dark"/>
                                 </div>
 
                                 <div class="col_full nobottommargin">
-                                    <button class="button button-3d button-black nomargin" id="login-form-submit"
-                                            name="login-form-submit"
-                                            value="login"><?= $this->lang->line('login_form_button') ?>
-                                    </button>
+
                                     <a href="<?= ROOT_URL; ?>altar/Ctr_account/recovery"
                                        class="fright"><?= $this->lang->line('login_form_forget') ?></a>
                                 </div>
+
+                                <div class="clean"></div>
+
+                                <br>
+                                <br>
+
+                                <div class="col_full">
+                                    <button class="button button-3d button-black nomargin login-button" id="login-form-submit"
+                                            name="login-form-submit"
+                                            value="login"><?= $this->lang->line('login_form_button') ?>
+                                    </button>
+                                </div>
                             </form>
 
-                            <div class="line line-sm"></div>
+                            <!--<div class="line line-sm"></div>-->
 
 
                         </div>

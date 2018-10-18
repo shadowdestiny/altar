@@ -1,9 +1,9 @@
 <?php
 /*Login*/
 $lang['login_title'] = "Enter your account";
-$lang['login_form_email'] = "EMAIL";
-$lang['login_form_pass'] = "PASSWORD";
-$lang['login_form_button'] = "ENTER";
+$lang['login_form_email'] = "Email";
+$lang['login_form_pass'] = "Password";
+$lang['login_form_button'] = "Enter";
 $lang['login_form_forget'] = "Did you forget your password?";
 /*Verify Login*/
 $lang['login_verify_welcome'] = "Welcome ";

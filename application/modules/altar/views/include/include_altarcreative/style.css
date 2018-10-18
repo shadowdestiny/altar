@@ -13925,7 +13925,7 @@ button.format-button{
 }
 img.response-image-left{
 	width:100%;
-	margin-left: -16px;
+	margin-left: 0px;
 }
 .image-section-download{
 	position:relative;
@@ -14021,12 +14021,12 @@ button.subscribe-input{
 	margin-left: -5px;
 	border:1px solid #FFCD00;
 	background:#FFCD00;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 	height: 35px;
 	color: black;
 	font-weight:bold;
@@ -14475,4 +14475,15 @@ p.cancel-supcription{
 	padding-right:100px;
 	margin-left: auto;
 	margin-right:auto;
+}
+
+.panel-login{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 2px;
+	border-radius: 4px;
+	border: 1px solid black;
+	background: white;
+}
+button.login-button{
+	width:100%;
 }

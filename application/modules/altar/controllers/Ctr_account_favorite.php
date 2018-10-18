@@ -82,6 +82,13 @@ class Ctr_account_favorite extends CI_Controller
 
         $result     = "";
 
+
+
+        $result =
+            "<div id='shop' class='content-display-video filter'><br><br>
+	            <div class='content-images'>
+	                <div class='images'>";
+
         foreach ($data as $key => $value) {
 
             $datat['video_id']  = $value['id'];
@@ -104,8 +111,38 @@ class Ctr_account_favorite extends CI_Controller
                 $con++;
 
             }
-            
+
+
             $result .= "
+            <div class='section-image'>
+				<div class='canvas-image'>
+					<a href='". ROOT_URL ."altar/Ctr_product/view/".$value['id']."' class='footer-link'>
+					<img src='http://localhost:8090/altar/assets/images/videos/thumbs/Image-34186_thumb.jpg' alt='Producto'>
+					</a>
+					<div>
+						<img src='" . URL_IMAGES . "videos/thumbs/" . $value['previewThumPath'] . "'>
+					</div>
+				</div>
+				<div class='text-photo'>
+					<div class='title-left'>
+						<a href='http://localhost:8090/altar/altar/Ctr_product/view/2' class='footer-link'>
+						    ".$value['title']."
+						</a>
+						<br>
+						$&nbsp; $value[offerPrice]
+					</div>
+					<div class='title-right'>
+						$allcategori
+					</div>
+				</div>
+			</div>
+			
+            ";
+
+            $result2 = "
+
+            
+
                 <div class='spost clearfix'>
                     <div class='entry-image'>
                         <a href='". ROOT_URL ."altar/Ctr_product/view/$value[id]'><img src='" . URL_IMAGES . "videos/thumbs/" . $value['previewThumPath'] . "' alt='Image'></a>
@@ -130,6 +167,11 @@ class Ctr_account_favorite extends CI_Controller
 
 
         }
+
+        $result .=
+            "</div>
+            </div>
+        </div>";
 
         return $result;
 
