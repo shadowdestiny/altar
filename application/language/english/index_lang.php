@@ -45,6 +45,8 @@ $lang['account_form_email'] = "Email";
 $lang['account_form_username'] = "Username";
 $lang['account_form_phone'] = "Phone";
 $lang['account_form_pass'] = "Password";
+$lang['account_form_pass_repeat'] = "Repeat Password";
+$lang['account_form_pass_submit'] = "Submit";
 $lang['account_form_button'] = "Edit Information";
 /*Filter*/
 $lang['filter_title'] = "SEARCH RESULTS";

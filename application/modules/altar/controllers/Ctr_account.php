@@ -319,7 +319,7 @@ class Ctr_account extends CI_Controller
     public function edit()
     {
         $lang = $this->session->userdata('Setlanguage');
-        $response = $this->putlanguage->setLanguage($lang, 'login');
+        $response = $this->putlanguage->setLanguage($lang, 'index');
         $data = [];
         $data_lang['categoryHeader'] = $response['categoryHeader'];
         $data_lang['categoryFooter'] = $response['categoryFooter'];

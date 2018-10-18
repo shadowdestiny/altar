@@ -50,7 +50,11 @@
             <div class = "content-user" *class="col_two_third nobottommargin contenidodeinformaciongeneral">
 
 
-                <h3><?= $this->lang->line('account_title2') ?> <img style="margin-bottom: 7px;width: 26px;" src="<?= URL_TEMPLATEALTAR ?>/img/pencil.png"></h3>
+                <h3><?= $this->lang->line('account_title2') ?>
+                    <a href="<?=URL_USUARIO_INDEX?>edit">
+                        <img style="margin-bottom: 7px;width: 26px;" src="<?= URL_TEMPLATEALTAR ?>/img/pencil.png">
+                    </a>
+                </h3>
 
                 <p><?= $this->lang->line('account_subtitle') ?> <?/*= SITE_NAME; */?></p>
 

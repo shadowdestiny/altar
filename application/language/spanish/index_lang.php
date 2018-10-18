@@ -47,6 +47,8 @@ $lang['account_form_email'] = "Correo";
 $lang['account_form_username'] = "Usuario";
 $lang['account_form_phone'] = "Telefono";
 $lang['account_form_pass'] = "Contraseña";
+$lang['account_form_pass_repeat'] = "Repetir contraseña";
+$lang['account_form_pass_submit'] = "Registrar";
 $lang['account_form_button'] = "Editar Información";
 /*Filter*/
 $lang['filter_title'] = "Resultados";
