@@ -76,6 +76,7 @@
           ============================================= -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Palanquin|Palanquin+Dark" rel="stylesheet">
     <link rel="shortcut icon" href="<?= URL_TEMPLATEALTAR ?>img/favicon.png" type="image/png"/>
     <link rel="stylesheet" href="<?= URL_TEMPLATEALTAR ?>css/bootstrap.css<?= URL_TEMPLATEALTARVERSIONCSSJS ?>"

@@ -8,7 +8,7 @@
         <div class="footer-widgets-wrap clearfix">
             <div class="col_full">
                 <div class="col-md-3 col-sm-3">
-                    <div class="widget widget_links clearfix">
+                    <div style="padding-top: 11px;" class="widget left widget_links clearfix">
                         <img style="margin-top: -2px;" src="<?= URL_TEMPLATEALTAR ?>images/logo-web.png" alt="Canvas Logo">
                         <ul class="footer-content">
                             <li>
@@ -19,7 +19,7 @@
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget widget_links clearfix">
+                    <div class="widget left widget_links clearfix">
                         <h4 class="jello footer"><?= $this->lang->line('footer__label_information') ?></h4>
                         <ul class="footer-content">
                             <li><a href="<?= ROOT_URL; ?>altar/creativealtar"><?= $this->lang->line('footer_home') ?></a></li>
@@ -44,7 +44,7 @@
                     <br>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget widget_links clearfix">
+                    <div class="widget left widget_links clearfix">
                         <h4 class="jello footer"><?= $this->lang->line('footer__label_category') ?></h4>
                         <ul class="footer-content">
                             <?= $categoryFooter ?>
@@ -53,7 +53,7 @@
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix" style="text-align: left">
+                    <div class="widget left clearfix" style="text-align: left">
                         <h4 class="jello footer"><?= $this->lang->line('footer__label_follow') ?></h4>
                         <div class="row">
 

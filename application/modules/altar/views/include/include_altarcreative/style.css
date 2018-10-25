@@ -96,7 +96,7 @@ a {
 	color: #071c2c;
 }
 
-a:hover { color: #2481c7 !important; }
+a:hover { color: #23527c !important; }
 
 a img { border: none; }
 
@@ -1950,7 +1950,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #header,
 #header-wrap,
 #logo img {
-	height: 100px;
+	/*height: 100px;*/
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
@@ -5939,6 +5939,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 	left: 0;
 	z-index: 6;
 	overflow: hidden;
+	cursor:pointer;
 }
 
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay {
@@ -13744,12 +13745,12 @@ text-align: center;}
 	width: 35vw;
 	/* max-width: 200px; */
 	text-align: left;
-	top: 40%;
+	top: 42%;
 	left: 10%;
 }
 .section-video > .video-text div{
 	color: #ffffff;
-	font-size: 4vw;
+	font-size: 3.5vw;
 	font-weight: bold;
 	font-style: italic;
 
@@ -13809,7 +13810,7 @@ text-align: center;}
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border:1px solid #FFCE01;
-	height: 35px;
+	height: 42px;
 	text-indent: 10px;
 }
 .section-video > .video-search > div.input-search input[type="text"]::placeholder{
@@ -13824,9 +13825,9 @@ text-align: center;}
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	width: 60px;
-	height: 34px;
+	height: 42px;
 	border: 1px solid #ffce01;
-	background: black;
+	background: #051c2c;
 	padding-bottom: 2px;
 }
 .section-video > .video-search > div.input-search button .icon-search3{
@@ -13914,6 +13915,7 @@ button.format-button{
 	font-size: 18px;
 	font-weight: bold;
 	color: black;
+	padding-bottom: 10px;
 }
 .font-title-2{
 	font-size: 10px;
@@ -13954,7 +13956,7 @@ img.response-image-left{
 	border: 0px solid white;
 	padding: 20px;
 	padding-top: 0.8vw;
-	padding-left: 1.5vw;
+	padding-left: 3.3vw;
 	width: 12vw;
 	height: 12vw;
 	font-size: 4vw;
@@ -14011,28 +14013,31 @@ input[type='text'].subscribe-input{
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
 	border: 1px solid white;
-	height: 35px;
+	height: 42px;
 	text-indent: 10px;
+	font-size:17px;
 }
 input[type='text'].subscribe-input::placeholder{
 	color:#c6c6c6;
 }
 button.subscribe-input{
 	margin-left: -5px;
-	border:1px solid #FFCD00;
-	background:#FFCD00;
+	border: 1px solid #FFCD00;
+	background: #FFCD00;
 	-webkit-border-top-right-radius: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	-moz-border-radius-topright: 3px;
 	-moz-border-radius-bottomright: 3px;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-	height: 35px;
+	height: 42px;
 	color: black;
-	font-weight:bold;
+	font-weight: bold;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-top: -1px;
+	font-size: 17px;
+	width: 148px;
 }
 .footer-widgets-wrap .clearfix ul{
 	list-style-type:none;
@@ -14506,4 +14511,8 @@ button.login-button{
 	transition: border-color ease-in-out .0s, box-shadow ease-in-out .0s;
 	text-align: left;
 	padding-right: 10px;
+}
+
+.widget.left{
+	padding-left:25px;
 }

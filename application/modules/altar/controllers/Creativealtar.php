@@ -442,7 +442,7 @@ class creativealtar extends CI_Controller
                                         <br />
                                        
                                         <div style='text-align: right;' class='arrow-right-text'>
-                                            <a hfer='#'>Ver más videos gratuitos</a> <span class='arrow-right'>>></span>                                     
+                                            <a href='" . ROOT_URL . "altar/Ctr_filtervideo/categories'>Ver más videos gratuitos</a> <span class='arrow-right'>>></span>                                     
                                         </a>
                                         
                                     </div>
